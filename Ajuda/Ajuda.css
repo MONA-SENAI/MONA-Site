@@ -1,16 +1,18 @@
 @font-face {
-    font-family: Mergeone;
+    font-family: "Mergeone";
     src: url(Fontes/MergeOne-Regular.ttf);
 }
+
 @font-face {
-    font-family: Lexend;
+    font-family: "Lexend";
     src: url(Fontes/LexendGiga-VariableFont_wght.ttf);
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+
 }
 
 html {
@@ -18,8 +20,12 @@ html {
 }
 
 .grid {
-    
+    width: 100vw;
     max-width: 1200px;
 
-    margin-left: 10px;
+    margin-left: 40px;
+}
+
+#titulo h1 {
+    font-family: "Lexend";
 }
