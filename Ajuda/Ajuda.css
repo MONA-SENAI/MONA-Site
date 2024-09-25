@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Lexend";
-    src: url(Fontes/LexendGiga-VariableFont_wght.ttf);
+    src: url(fonts/LexendGiga-VariableFont_wght.ttf);
 }
 
 * {
@@ -20,12 +20,14 @@ html {
 }
 
 .grid {
-    width: 100vw;
-    max-width: 1200px;
-
-    margin-left: 40px;
+    display: flex;
 }
 
-#titulo h1 {
+.titulo h1 {
     font-family: "Lexend";
 }
+
+.titulo h2 {
+    font-family: "Lexend";
+}
+
