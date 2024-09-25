@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Mergeone";
-    src: url(Fontes/MergeOne-Regular.ttf);
+    src: url(fonts/MergeOne-Regular.ttf);
 }
 
 @font-face {
@@ -9,25 +9,62 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.grid {
+.categorias {
+    margin: 10px;
     display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    flex-direction: column;
 }
 
-.titulo h1 {
+ul {
+    padding-left: 18px;
+}
+
+.categorias p {
+    font-family: "Mergeone";
+}
+
+.categorias h1 {
     font-family: "Lexend";
+}
+
+.titulo {
+    padding: 20px;
 }
 
 .titulo h2 {
-    font-family: "Lexend";
+    display: flex;
+    flex-direction: row;
+
 }
 
+.entregas {
+    padding: 20px;
+}
+
+.reembolsos {
+    padding: 20px;
+}
+
+.problemas {
+    padding: 20px;
+}
+
+.pagamento {
+    padding: 20px;
+}
+
+.suporte {
+    padding: 20px;
+}
