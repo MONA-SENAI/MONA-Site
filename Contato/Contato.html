@@ -1,104 +1,68 @@
-  <html lang="pt-br">
-  <head>
-      <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="./style.css">
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap" rel="stylesheet">
-          
-          <style> 
-          @font-face {
-            font-family:lexend giga;
-            src:local(Merge One)}
-            h1
-         
-          body {font-family: Merge One, Helvetica;}
-          * {box-sizing: border-box;}
-          
-          input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-          }
-          
-          input[type= enviar] {
-            background-color: #D2E59E;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-          }
-          
-          input[type= enviar]:hover {
-            background-color: #45a049;
-          }
-          
-          .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            padding: 20px;
-          }
-          </style> 
-
-  <body>
-
-    
-      
-      <div class="container">
-        <form action="/action_page.php">
-          
-          <input type="text" id="fname" name="Primeiro nome" placeholder="Primeiro nome">
-      
+<html lang="pt-br">
+    <head>
         
-          <input type="text" id="lname" name="sobrenome" placeholder="sobrenome">
-      
-          
-          <select id="country" name="country">
-          <option value="">seleção</option>
-          <option value="brasil">Brasil</option>
-          <option value="estados_unidos">Estados Unidos</option>
-          <option value="china">China</option>
-          <option value="alemanha">Alemanha</option>
-          <option value="japao">Japão</option>
-          <option value="franca">França</option>
-          <option value="india">Índia</option>
-          <option value="canada">Canadá</option>
-          <option value="reino_unido">Reino Unido</option>
-          <option value="italia">Itália</option>
-          <option value="mexico">México</option>
-          <option value="coreia_do_sul">Coreia do Sul</option>
-          <option value="espanha">Espanha</option>
-          <option value="russia">Rússia</option>
-          <option value="turquia">Turquia</option>
-          <option value="australia">Austrália</option>
-          <option value="sudafrica">África do Sul</option>
-          <option value="indonesia">Indonésia</option>
-          <option value="tailandia">Tailândia</option>
-          <option value="argentina">Argentina</option>
-          <option value="nigeria">Nigéria</option>
-          <option value="suecia">Suécia</option>
-          <option value="dinamarca">Dinamarca</option>
-          <option value="finlandia">Finlândia</option>
-          <option value="noruega">Noruega</option>
-          <option value="novaiorque">Nova Zelândia</option>
-          </select>
-      
-          <label for="Assunto">Assunto</label>
-          <textarea id="subject" name="assunto" placeholder="..." style="height:200px"></textarea>
-      
-          <input type="enviar" value="enviar">
-        </form>
-      </div>
-      
-      </body>
-
-  </html>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="/contato.css">
+            <title>Formulário contato</title>
+             
+            
+            </head>
+    <body>
+  
+      <h1>Contato</h1>
+         
+      <style>
+        body {
+            background-image: url('caminho/da/imagem.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+        <input type="primeiro nome" id="Primeironome"  style="border: none;" value="primeiro nome"> 
+         <br><br>
+        <input type="sobrenome" id="sobrenome" style="border: none;" value="sobrenome">
+            
+            <select id="seleção" name="seleção">
+            <option value="">seleção</option>
+            <option value="brasil">Brasil</option>
+            <option value="estados_unidos">Estados Unidos</option>
+            <option value="china">China</option>
+            <option value="alemanha">Alemanha</option>
+            <option value="japao">Japão</option>
+            <option value="franca">França</option>
+            <option value="india">Índia</option>
+            <option value="canada">Canadá</option>
+            <option value="reino_unido">Reino Unido</option>
+            <option value="italia">Itália</option>
+            <option value="mexico">México</option>
+            <option value="coreia_do_sul">Coreia do Sul</option>
+            <option value="espanha">Espanha</option>
+            <option value="russia">Rússia</option>
+            <option value="turquia">Turquia</option>
+            <option value="australia">Austrália</option>
+            <option value="sudafrica">África do Sul</option>
+            <option value="indonesia">Indonésia</option>
+            <option value="tailandia">Tailândia</option>
+            <option value="argentina">Argentina</option>
+            <option value="nigeria">Nigéria</option>
+            <option value="suecia">Suécia</option>
+            <option value="dinamarca">Dinamarca</option>
+            <option value="finlandia">Finlândia</option>
+            <option value="noruega">Noruega</option>
+            <option value="novaiorque">Nova Zelândia</option>
+            </select>
+        
+            
+            <label for="Assunto">Assunto</label>
+            <textarea id="assunto" name="assunto" placeholder="..." style="height:200px"></textarea>
+            <input type="enviar" value="enviar">
+            
+          </form>
+        </div>
+        
+        </body>
+  
+    </html>
