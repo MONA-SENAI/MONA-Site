@@ -9,14 +9,75 @@
     scroll-behavior: smooth;
   }
   
-.container {
-    max-width: 1740px;
+  .menu {
+    width: 93vw;
+    max-width: 1400px;
+
+    margin-left: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
- header {
-  width: 100%;
- }
+.menu a {
+    font-family: "Mergeone";
+    font-size: 20px;
+    font-weight: 500;
 
- 
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    margin-top: 15px;
+}
+
+.menu a:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+.menu img {
+    width: 160px;
+    /* height: 45px; */
+}
+
+.seções {
+    width: 25vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 200px;
+    margin-right: 200px;
+    
+}
+
+#categorias {
+   
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
   
-  
+
