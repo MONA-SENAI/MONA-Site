@@ -1,18 +1,10 @@
-@font-face {
-    font-family: "Mergeone";
-    src: url(/FONTE/merge-one-cufonfonts/MergeOne-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Lexend";
-    src: url(/FONTE/Lexend_Giga/LexendGiga-VariableFont_wght.ttf);
-}
 
 
 body
 
+
 h1{
-  font-family:"lexend";
+  
   color: #45a049;}
 
 
