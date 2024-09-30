@@ -19,20 +19,22 @@ html {
 }
 
 .menu {
-    width: 700px;
+    width: 94vw;
+    max-width: 1500px;
+
+    margin-left: 40px;
 
     display: flex;
     justify-content: space-between;
 
-    margin-top: 30px;
-    margin-left: 130px;
-
-    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 .menu a {
     font-family: "Mergeone";
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 
     color: black;
@@ -51,12 +53,39 @@ html {
 
 .menu img {
     width: 160px;
-    height: 45px;
-
 }
 
-.categorias {
-    margin: 10px;
+#categorias svg {
+    width: 50px;
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+}
+
+#categorias svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+
+.seções {
+    width: 25vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+#categorias {
+   
     display: flex;
     align-items: center;
 
@@ -70,13 +99,15 @@ ul {
 
 .titulo h1 {
     font-family: "Lexend";
+    font-size: 35px;
 }
 
 .titulo h2 {
     font-family: "Lexend";
+    font-size: 20px;
 }
 
-.categorias li {
+#categorias li {
     font-family: "Mergeone";
     font-size: 20px;
     color: whitesmoke;
@@ -84,19 +115,23 @@ ul {
     padding: 16px;
 }
 
-.categorias h1 {
+#categorias h1 {
     font-family: "Lexend";
 
     margin-bottom: 15px;
 }
 
-.categorias h2 {
+#categorias h2 {
     font-family: "Lexend";
-    
+
 }
 
 .titulo {
     padding: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .entregas {
@@ -104,9 +139,9 @@ ul {
     width: 1000px;
 
     background-color: #784E45;
-    
+
     color: whitesmoke;
-    
+
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -127,9 +162,9 @@ ul {
     width: 1000px;
 
     background-color: #784E45;
-    
+
     color: whitesmoke;
-    
+
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -150,9 +185,9 @@ ul {
     width: 1000px;
 
     background-color: #784E45;
-    
+
     color: whitesmoke;
-    
+
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -173,9 +208,9 @@ ul {
     width: 1000px;
 
     background-color: #784E45;
-    
+
     color: whitesmoke;
-    
+
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -196,7 +231,7 @@ ul {
     width: 1000px;
 
     background-color: #784E45;
-    
+
     color: whitesmoke;
 
     padding: 20px;
@@ -213,3 +248,4 @@ ul {
 .suporte li {
     margin-left: 30px;
 }
+

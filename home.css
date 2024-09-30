@@ -10,9 +10,6 @@
 }
 
 
-html {
-    scroll-behavior: smooth;
-}
 
 .banner1 img {
     height: 500px;
@@ -78,6 +75,236 @@ font-size: 30px;
     padding-right: 35px;
     width: 330px;
     height: 500px;
+}
+
+.linha-cortada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.parte {
+    height: 2px;
+    background-color: #8AA1B1;
+    margin: 0 5px;
+}
+
+.parte:nth-child(1) {
+    width: 325px;
+}
+
+.parte:nth-child(2) {
+    width: 325px;
+    
+}
+
+.parte:nth-child(3) {
+    width: 325px;
+}
+
+.parte:nth-child(4) {
+    width: 325px;
+}
+
+.bolinhas {
+    display: flex;
+}
+
+.bolinha {
+    width: 40px;        
+    height: 40px;       
+    background-color: #666258; 
+    border-radius: 50%; 
+   margin: 5px;
+}
+.bolinha1 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #5E7498;               
+}
+    
+.bolinha2 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #CD55BA;               
+}
+    
+.bolinha3 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #909090;               
+}
+    
+.bolinha4 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #000000;               
+}
+    
+.bolinha5 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    margin-left: 120px;
+  
+    background-color: #716967;               
+}
+    
+.bolinha6 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #A3A0A3;               
+}
+    
+.bolinha7 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #000; 
+        
+}
+    
+.bolinha8 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    border: 1px solid black;
+    background-color: #FFFF; 
+   
+        
+}
+.bolinha9 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #692532; 
+    margin-left: 180px;
+}
+.bolinha10 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #C6B4A5; 
+        
+ }
+.bolinha12 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #000000; 
+        
+ }
+.bolinha13 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    border: 1px solid black;
+    background-color: #FFFF; 
+        
+ }
+.bolinha14 {
+    background-color: white; 
+    border: 1px solid black; 
+    width: 39px; 
+    height: 39px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 180px;
+}
+ 
+
+.bolinha15 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #ED6D84; 
+        
+ }
+
+ .parte {
+    height: 2px;
+    background-color: #8AA1B1;
+    margin: 0 5px;
+}
+
+.bolas {
+    display: flex;
+}
+
+.bola {
+    width: 40px;        
+    height: 40px;       
+    background-color: #ffff; 
+    border-radius: 50%; 
+   margin: 5px;
+   border: 1px solid black; 
+}
+.bola1 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #ffff; 
+    border: 1px solid black;               
+}
+    
+.bola2 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px;  
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #ffff;  
+    border: 1px solid black;              
+}
+    
+.bolinha3 {
+    display: flex;                    
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50%;         
+    margin: 5px; 
+    background-color: #ffff;  
+    border: 1px solid black; 
+    color: black;
+      display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-weight: bold;
 }
 
 

@@ -2,6 +2,7 @@
     font-family: "Lexend";
     src: url(Fontes/LexendGiga-VariableFont_wght.ttf);
 }
+
 @font-face {
     font-family: "Merge";
     src: url(Fontes/MergeOne-Regular.woff);
@@ -14,24 +15,48 @@
     box-sizing: border-box;
 }
 
+.container-grid {
+    width: 85vw;
+    margin: 0 auto;
+}
 
-#sobre img {
+#madu {
+    position: relative;
+}
+
+#madu img {
     height: 58vw;
 }
 
-#sobre h2 {
-    font-family: "lexend";
-        font-size: 60px;
-        font-weight: 600;
+#madu h2 {
+    position: absolute;
+    bottom: 60px;
+    right: 5vw;
 
-        color: #000000;
+    font-family: "lexend";
+    font-size: 60px;
+    font-weight: 600;
+
+    color: #ffffff;
 }
 
 #sobre p {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+
+
     font-family: "merge";
-        font-size: 35px;
-        font-weight: 400;
+    font-size: 35px;
+    font-weight: 400;
 
-        color: #000000;
-
+    color: #000000;
 }
+
+#trabalho {
+    background-image: url(img/planta.png);
+    height: 100vw;
+    background-repeat: no-repeat
+}
+
