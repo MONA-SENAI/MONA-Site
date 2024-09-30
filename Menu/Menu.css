@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "Mergeone";
+    src: url(fonts/MergeOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url(fonts/LexendGiga-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu {
+    width: 95vw;
+    max-width: 1500px;
+
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.menu a {
+    font-family: "Mergeone";
+    font-size: 20px;
+    font-weight: 500;
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    margin-top: 15px;
+}
+
+.menu a:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+.menu img {
+    width: 160px;
+}
+
+#icons svg{
+    width: 50px;
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+
+}
+
+#icons svg:hover {
+    text-decoration: #784E45;
+    color: #784E45;
+}
+
+.seções {
+    width: 25vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+#icons {
+   
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    flex-direction: column;
+}
