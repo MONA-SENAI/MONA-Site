@@ -18,6 +18,43 @@ html {
     scroll-behavior: smooth;
 }
 
+.menu {
+    width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 30px;
+    margin-left: 130px;
+
+    margin-right: auto;
+}
+
+.menu a {
+    font-family: "Mergeone";
+    font-size: 25px;
+    font-weight: 500;
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    margin-top: 15px;
+}
+
+.menu a:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+.menu img {
+    width: 160px;
+    height: 45px;
+
+}
+
 .categorias {
     margin: 10px;
     display: flex;
@@ -31,40 +68,148 @@ ul {
     padding-left: 18px;
 }
 
-.categorias p {
+.titulo h1 {
+    font-family: "Lexend";
+}
+
+.titulo h2 {
+    font-family: "Lexend";
+}
+
+.categorias li {
     font-family: "Mergeone";
+    font-size: 20px;
+    color: whitesmoke;
+
+    padding: 16px;
 }
 
 .categorias h1 {
     font-family: "Lexend";
+
+    margin-bottom: 15px;
+}
+
+.categorias h2 {
+    font-family: "Lexend";
+    
 }
 
 .titulo {
     padding: 20px;
 }
 
-.titulo h2 {
-    display: flex;
-    flex-direction: row;
+.entregas {
+    height: 250px;
+    width: 1000px;
 
+    background-color: #784E45;
+    
+    color: whitesmoke;
+    
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 50px;
 }
 
-.entregas {
-    padding: 20px;
+.entregas h1 {
+    margin-left: 30px;
+}
+
+.entregas li {
+    margin-left: 30px;
 }
 
 .reembolsos {
+    height: 250px;
+    width: 1000px;
+
+    background-color: #784E45;
+    
+    color: whitesmoke;
+    
     padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 50px;
+}
+
+.reembolsos h1 {
+    margin-left: 30px;
+}
+
+.reembolsos li {
+    margin-left: 30px;
 }
 
 .problemas {
+    height: 250px;
+    width: 1000px;
+
+    background-color: #784E45;
+    
+    color: whitesmoke;
+    
     padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 50px;
+}
+
+.problemas h1 {
+    margin-left: 30px;
+}
+
+.problemas li {
+    margin-left: 30px;
 }
 
 .pagamento {
+    height: 250px;
+    width: 1000px;
+
+    background-color: #784E45;
+    
+    color: whitesmoke;
+    
     padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 50px;
+}
+
+.pagamento h1 {
+    margin-left: 30px;
+}
+
+.pagamento li {
+    margin-left: 30px;
 }
 
 .suporte {
+    height: 250px;
+    width: 1000px;
+
+    background-color: #784E45;
+    
+    color: whitesmoke;
+
     padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    border-radius: 50px;
+}
+
+.suporte h1 {
+    margin-left: 30px;
+}
+
+.suporte li {
+    margin-left: 30px;
 }

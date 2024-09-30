@@ -2,21 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
-  }
-  
-  html {
+}
+
+html {
     scroll-behavior: smooth;
-  }
-  
-  .menu {
-    width: 93vw;
-    max-width: 1400px;
+}
+
+.menu {
+    width: 95vw;
+    max-width: 1500px;
 
     margin-left: 40px;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
     margin-top: 20px;
@@ -45,7 +43,24 @@
 
 .menu img {
     width: 160px;
-    /* height: 45px; */
+}
+
+.icons svg{
+    width: 50px;
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+
+}
+
+.icons svg:hover {
+    text-decoration: #784E45;
+    color: #784E45;
 }
 
 .seções {
@@ -56,21 +71,44 @@
 
     margin-left: 200px;
     margin-right: 200px;
-    
 }
 
-#categorias {
-   
+
+.icons {
     display: flex;
     align-items: center;
 
     justify-content: space-around;
     flex-direction: column;
+
+    margin-left: 25px;
+
 }
 
+.conteudo-imagem {
+    height: 600px;
 
+    display: flex;
 
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
 
+.sobre {
+    margin-top: 30px;
+    margin-left: 35px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    text-align: center;
+  }
+
+.sobre h1 {
+    font-size: 35px;
+}
 
 
 

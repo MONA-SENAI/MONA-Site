@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Lexend";
+    src: url(Fontes/LexendGiga-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Merge";
+    src: url(Fontes/MergeOne-Regular.woff);
+}
+
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+#sobre img {
+    height: 58vw;
+}
+
+#sobre h2 {
+    font-family: "lexend";
+        font-size: 60px;
+        font-weight: 600;
+
+        color: #000000;
+}
+
+#sobre p {
+    font-family: "merge";
+        font-size: 35px;
+        font-weight: 400;
+
+        color: #000000;
+
+}
