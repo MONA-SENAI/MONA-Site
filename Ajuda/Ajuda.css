@@ -58,6 +58,18 @@ html {
 #categorias svg {
     width: 50px;
 
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+}
+
+#categorias svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
 }
 
 
@@ -236,3 +248,4 @@ ul {
 .suporte li {
     margin-left: 30px;
 }
+

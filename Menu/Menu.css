@@ -55,7 +55,7 @@ html {
     width: 160px;
 }
 
-#icons svg{
+.icons svg{
     width: 50px;
 
     color: black;
@@ -68,7 +68,7 @@ html {
 
 }
 
-#icons svg:hover {
+.icons svg:hover {
     text-decoration: #784E45;
     color: #784E45;
 }
@@ -84,7 +84,7 @@ html {
 }
 
 
-#icons {
+.icons {
    
     display: flex;
     align-items: center;
