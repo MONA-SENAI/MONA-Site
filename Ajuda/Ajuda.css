@@ -29,7 +29,7 @@ html {
 
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
 }
 
 .menu a {
@@ -85,7 +85,7 @@ html {
 
 
 #categorias {
-   
+
     display: flex;
     align-items: center;
 
@@ -134,7 +134,7 @@ ul {
     flex-direction: column;
 }
 
-.entregas {
+.categoria-entregas {
     height: 250px;
     width: 1000px;
 
@@ -149,15 +149,15 @@ ul {
     border-radius: 50px;
 }
 
-.entregas h1 {
+.categoria-entregas h1 {
     margin-left: 30px;
 }
 
-.entregas li {
+.categoria-entregas li {
     margin-left: 30px;
 }
 
-.reembolsos {
+.categoria-reembolsos {
     height: 250px;
     width: 1000px;
 
@@ -172,15 +172,15 @@ ul {
     border-radius: 50px;
 }
 
-.reembolsos h1 {
+.categoria-reembolsos h1 {
     margin-left: 30px;
 }
 
-.reembolsos li {
+.categoria-reembolsos li {
     margin-left: 30px;
 }
 
-.problemas {
+.categoria-problemas {
     height: 250px;
     width: 1000px;
 
@@ -195,15 +195,15 @@ ul {
     border-radius: 50px;
 }
 
-.problemas h1 {
+.categoria-problemas h1 {
     margin-left: 30px;
 }
 
-.problemas li {
+.categoria-problemas li {
     margin-left: 30px;
 }
 
-.pagamento {
+.categoria-pagamento {
     height: 250px;
     width: 1000px;
 
@@ -218,15 +218,15 @@ ul {
     border-radius: 50px;
 }
 
-.pagamento h1 {
+.categoria-pagamento h1 {
     margin-left: 30px;
 }
 
-.pagamento li {
+.categoria-pagamento li {
     margin-left: 30px;
 }
 
-.suporte {
+.categoria-suporte {
     height: 250px;
     width: 1000px;
 
@@ -241,11 +241,10 @@ ul {
     border-radius: 50px;
 }
 
-.suporte h1 {
+.categoria-suporte h1 {
     margin-left: 30px;
 }
 
-.suporte li {
+.categoria-suporte li {
     margin-left: 30px;
 }
-
