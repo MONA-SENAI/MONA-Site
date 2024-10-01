@@ -5,6 +5,7 @@
 }
 /*menu*/
 body 
+
 .menu {
   width: 95vw;
   max-width: 1500px;
@@ -170,7 +171,7 @@ textarea {
 input[type=text],
 select,
 textarea {
-
+ 
   background-color: #FFF3DE;
   border-radius: 48px;
   width: 80%;
@@ -179,14 +180,18 @@ textarea {
   /*cor da borda caixa de assunto*/
   border-radius: 4px;
   /*curva da borda*/
-  box-sizing: border-box;
+ align-items: center;
   margin-top: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   resize: vertical;
   outline: none;
+ 
 }
 
 button {
+  align-items: center;
+
+  
   background-color: #D2E59E;
   /* Cor de fundo */
   color: white;
@@ -204,9 +209,11 @@ button {
   transition: background-color 0.3s;
   /* Transição suave */
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 button:hover {
+  
   background-color: #B8D98C;
   /* Cor de fundo ao passar o mouse */
 }
@@ -215,7 +222,7 @@ input[type=enviar]:hover {
   background-color: #45a049;}
 
 
-  iframe{text-align: center;}
+  
 
 /*FOOTER*/
 
