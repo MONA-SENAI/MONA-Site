@@ -1,43 +1,120 @@
 @font-face {
-    font-family: 'Merge One Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Merge One Regular'), url('MergeOne-Regular.woff') format('woff');
-    }
+    font-family: "Mergeone";
+    src: url(fonts/MergeOne-Regular.ttf);
+}
 
-*{
-
+@font-face {
+    font-family: "Lexend";
+    src: url(fonts/LexendGiga-VariableFont_wght.ttf);
 }
 
 
 
-.banner1 img {
-    height: 500px;
-    width: 1500px;
- 
+html {
+    scroll-behavior: smooth;
 }
 
 .menu {
-    
-    font-size: 20px;
-    color: black;
+    width: 95vw;
+    max-width: 1500px;
+
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
-#sobre{
+.menu a {
+    font-family: "Merge one";
+    font-size: 20px;
+    font-weight: 500;
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    margin-top: 15px;
+}
+
+.menu a:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+.menu img {
+    width: 160px;
+}
+
+.icons svg {
+    width: 50px;
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+
+}
+
+.icons svg:hover {
+    text-decoration: #784E45;
+    color: #784E45;
+}
+
+.seções {
+    width: 25vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+.icons {
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+.banner1 img {
+    height: 450px;
+    width: 1450px;
+    margin-top: 20px;
+    margin-left: 25px;
+
+}
+
+
+
+#sobre {
     font-size: 18px;
- 
     display: flex;
     flex-direction: column;
+    margin-left: 80px;
 
-  
+
 }
 
 .sobre1 {
     font-size: 20px;
-   
+
     padding-top: 30px;
     font-family: "merge one";
-  width: 1400px;
+    width: 1400px;
 }
 
 .sobre2 {
@@ -52,37 +129,197 @@
     padding-top: 20px;
     font-family: "merge one";
     width: 1400px;
-  
+
 }
 
 .texto {
-
-font-size: 30px;
+    font-family: "marge one";
+    font-size: 30px;
+    margin-left: 580px;
 }
 
 .container {
-    display: flex; 
-    justify-content: center; 
-   gap: 10px;
-   margin-top: 10px;
-    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+
+}
+
+.container p {
     font-family: "merge one";
-    
+    margin-left: 10px;
 }
 
 .container img {
-   
-    padding-right: 35px;
+
+    margin: 5px;
     width: 330px;
     height: 500px;
 }
 
-.linha-cortada {
+
+
+.linha {
+    width: 1400px;
+    margin-top: 10px;
+}
+
+
+
+
+.bolinhas {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1px;
-    margin: 20px 0;
+}
+
+.bolinha {
+    width: 40px;
+    height: 40px;
+    background-color: #666258;
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 48px;
+}
+
+.bolinha1 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #5E7498;
+}
+
+.bolinha2 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #CD55BA;
+}
+
+.bolinha3 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #909090;
+}
+
+.bolinha4 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #000000;
+}
+
+.bolinha5 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 109px;
+
+    background-color: #716967;
+}
+
+.bolinha6 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #A3A0A3;
+}
+
+.bolinha7 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #000;
+
+}
+
+.bolinha8 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #FFFF;
+
+
+}
+
+.bolinha9 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #692532;
+    margin-left: 150px;
+}
+
+.bolinha10 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #C6B4A5;
+
+}
+
+.bolinha12 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #000000;
+
+}
+
+.bolinha13 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 1px solid black;
+    background-color: #FFFF;
+
+}
+
+.bolinha14 {
+    background-color: white;
+    border: 1px solid black;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 160px;
+}
+
+
+.bolinha15 {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #ED6D84;
+
 }
 
 .parte {
@@ -91,223 +328,430 @@ font-size: 30px;
     margin: 0 5px;
 }
 
-.parte:nth-child(1) {
-    width: 325px;
-}
-
-.parte:nth-child(2) {
-    width: 325px;
-    
-}
-
-.parte:nth-child(3) {
-    width: 325px;
-}
-
-.parte:nth-child(4) {
-    width: 325px;
-}
-
-.bolinhas {
-    display: flex;
-}
-
-.bolinha {
-    width: 40px;        
-    height: 40px;       
-    background-color: #666258; 
-    border-radius: 50%; 
-   margin: 5px;
-}
-.bolinha1 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #5E7498;               
-}
-    
-.bolinha2 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #CD55BA;               
-}
-    
-.bolinha3 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #909090;               
-}
-    
-.bolinha4 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #000000;               
-}
-    
-.bolinha5 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    margin-left: 120px;
-  
-    background-color: #716967;               
-}
-    
-.bolinha6 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #A3A0A3;               
-}
-    
-.bolinha7 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #000; 
-        
-}
-    
-.bolinha8 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    border: 1px solid black;
-    background-color: #FFFF; 
-   
-        
-}
-.bolinha9 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px; 
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #692532; 
-    margin-left: 180px;
-}
-.bolinha10 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #C6B4A5; 
-        
- }
-.bolinha12 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #000000; 
-        
- }
-.bolinha13 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    border: 1px solid black;
-    background-color: #FFFF; 
-        
- }
-.bolinha14 {
-    background-color: white; 
-    border: 1px solid black; 
-    width: 39px; 
-    height: 39px;
-    border-radius: 50%;
-    margin: 5px;
-    margin-left: 180px;
-}
- 
-
-.bolinha15 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #ED6D84; 
-        
- }
-
- .parte {
-    height: 2px;
-    background-color: #8AA1B1;
-    margin: 0 5px;
-}
-
 .bolas {
     display: flex;
+
+
 }
 
 .bola {
-    width: 40px;        
-    height: 40px;       
-    background-color: #ffff; 
-    border-radius: 50%; 
-   margin: 5px;
-   border: 1px solid black; 
-}
-.bola1 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #ffff; 
-    border: 1px solid black;               
-}
-    
-.bola2 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px;  
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #ffff;  
-    border: 1px solid black;              
-}
-    
-.bolinha3 {
-    display: flex;                    
-    height: 40px; 
-    width: 40px; 
-    border-radius: 50%;         
-    margin: 5px; 
-    background-color: #ffff;  
-    border: 1px solid black; 
-    color: black;
-      display: flex; 
-    justify-content: center; 
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
     align-items: center;
-    font-weight: bold;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 49px;
+}
+
+.bola1 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 4px;
 }
 
 
+.bola2 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
 
 
+.bola3 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
 
+.bola4 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 169px;
+}
+
+.bola5 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+
+.bola6 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+
+.bola7 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+.bola8 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 169px;
+   
+}
+
+.bola9 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+
+.bola10 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+
+.bola11 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+.bola12 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 170px;
+}
+
+.bola13 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+
+.bola14 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+
+.bola15 {
+    width: 40px;
+    /* Ajuste o tamanho do círculo */
+    height: 40px;
+    /* Deve ser igual à largura para ser um círculo */
+    background-color: white;
+    border-radius: 50%;
+    /* Faz o formato ser circular */
+    display: flex;
+    /* Usando flexbox */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-family: Arial, sans-serif;
+    /* Fonte do texto */
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+.banner2 img {
+    height: 550px;
+    width: 1450px;
+    margin-top: 30px;
+    margin-left: 25px;
+
+
+}
+
+.quadrado {
+    width: 1000px;
+    height: 550px;
+    background-color: #CBC8C8;
+    margin-top: 25px;
+    margin-left: 250px;
+}
+
+.quadrado img {
+    margin-top: 20px;
+    width: 330px;
+    height: 500px;
+    margin-left: 25px;
+}
+
+.quadrado p {
+    font-family: "merge one";
+
+}
