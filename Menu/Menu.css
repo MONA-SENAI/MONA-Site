@@ -19,13 +19,12 @@ html {
 }
 
 .menu {
-    width: 95vw;
+    width: 100vw;
     max-width: 1500px;
-
-    margin-left: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -52,7 +51,12 @@ html {
 }
 
 .menu img {
-    width: 160px;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
 }
 
 .icons svg{
@@ -74,21 +78,17 @@ html {
 }
 
 .seções {
-    width: 25vw;
+    width: 30vw;
 
     display: flex;
-    justify-content: space-between;
-
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
-.icons {
+#icons {
    
     display: flex;
     align-items: center;
-
-    justify-content: space-around;
     flex-direction: column;
 }
