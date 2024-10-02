@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "Mergeone";
+    src: url(Font/MergeOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url(fonts/LexendGiga-VariableFont_wght.ttf);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -86,7 +98,7 @@ html {
 }
 
 .conteudo-imagem {
-    height: 600px;
+     height: 565px;
 
     display: flex;
 
@@ -110,12 +122,51 @@ html {
     font-size: 35px;
 }
 
+/////////////////////
+
+.fooder-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    
+    margin-left: 550px;
+    margin-right: 550px;
+    
+}
+
+.sociais img {
+    width: 160px;
+}
+.sociais svg {
+    width: 35px;
+    height: 35px;
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+}
+
+.sociais svg:hover {
+    text-decoration: #784E45;
+    color: #784E45;
+}
 
 
 
-
-
-
-
-  
 
