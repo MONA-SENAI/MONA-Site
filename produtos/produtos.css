@@ -22,19 +22,214 @@ body {
     background-color: #f5f5f5;
 }
 
-.banner {
-    text-align: center;
-    background-image: url(produtos/imgs/Lookbook.png);
+.menu {
+    width: 100vw;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.banner img {
-    max-width: 100%;
-    height: auto;
+.menu a {
+    font-family: 'Merge One Regular';
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+    margin-top: 15px;
+}
+
+.menu a:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+.menu img {
+    width: 150px;
+    display: flex;
+    cursor: pointer;
+}
+
+#icons .carrinho svg {
+    color: black;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+    cursor: pointer;
+}
+
+#icons .carrinho svg:hover {
+    text-decoration: #784E45;
+    color: #784E45;
+}
+
+.seções {
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carrinho {
+    width: 35px;
+    height: 35px;
+}
+
+#icons {
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.banner {
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    background-image: url('C:/Users/40266067832/Desktop/MONA-Site/produtos/imgs/Lookbook.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .banner p {
     font-family: 'Playfair Display';
-    font-size: 80px;
+    font-size: 50px;
     margin-top: 20px;
     color: #333;
+    animation: scroll-text 15s linear infinite;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.banner-text-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin: 20px; /* Espaçamento em volta da seção */
+}
+
+.categorias .item {
+    position: relative; /* Necessário para posicionar o texto sobre a imagem */
+    margin: 20px; /* Aumenta o espaçamento entre os itens */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.categorias img {
+    border-radius: 50%; /* Imagens redondas */
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+}
+
+.categorias img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.categorias p {
+    position: absolute; /* Permite que o texto se sobreponha à imagem */
+    bottom: 10px; /* Posiciona o texto na parte inferior da imagem */
+    left: 50%; /* Centraliza o texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição do texto para centralizá-lo */
+    color: white; /* Cor do texto */
+    font-family: 'Lexend', sans-serif; /* Fonte do texto */
+    font-weight: bold; /* Negrito */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor contraste */
+    border-radius: 5px; /* Arredonda os cantos do fundo do texto */
+    padding: 5px; /* Espaçamento em volta do texto */
+}
+
+.escolhas {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.escolhas h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.carrossel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibe três itens por linha */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px; /* Espaçamento interno no carrossel */
+}
+
+.carrossel .item {
+    background-color: #f7f7f7; /* Cor de fundo dos itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno nos itens */
+    display: flex; /* Usado para empilhar imagem e texto */
+    flex-direction: column; /* Coloca o conteúdo em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.carrossel .item img {
+    width: 100%; /* Largura da imagem ocupa 100% do item */
+    height: 500px; /* Altura fixa para tornar a imagem quadrada */
+    object-fit: cover; /* Corta a imagem se necessário para preencher o espaço */
+    border-radius: 5px; /* Arredonda os cantos da imagem */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.carrossel .item:hover {
+    transform: scale(1.05);
+}
+
+.carrossel .item p {
+    font-size: 20px; /* Tamanho da fonte do texto */
+    color: #333; /* Cor do texto */
+    margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+
+@media (max-width: 1024px) {
+    .carrossel {
+        grid-template-columns: repeat(2, 1fr); /* Exibe dois itens por linha em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .carrossel {
+        grid-template-columns: 1fr; /* Exibe um item por linha em telas muito pequenas */
+    }
 }
