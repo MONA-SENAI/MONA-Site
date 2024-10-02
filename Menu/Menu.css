@@ -19,13 +19,12 @@ html {
 }
 
 .menu {
-    width: 95vw;
+    width: 100vw;
     max-width: 1500px;
-
-    margin-left: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -52,11 +51,14 @@ html {
 }
 
 .menu img {
-    width: 160px;
+    width: 150px;
+
+    display: flex;
+    
+    cursor: pointer;
 }
 
-.icons svg{
-    width: 50px;
+#icons .carrinho svg{
 
     color: black;
 
@@ -68,27 +70,37 @@ html {
 
 }
 
-.icons svg:hover {
+#icons .carrinho svg:hover {
     text-decoration: #784E45;
     color: #784E45;
 }
 
 .seções {
-    width: 25vw;
+    width: 30vw;
 
     display: flex;
-    justify-content: space-between;
-
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-
-.icons {
-   
-    display: flex;
-    align-items: center;
-
     justify-content: space-around;
-    flex-direction: column;
+    align-items: center;
 }
+
+.carrinho{
+      width: 35px;
+      height: 35px;
+}
+
+#icons {
+    width: 98vw;
+    
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+ 

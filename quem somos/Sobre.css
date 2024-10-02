@@ -35,7 +35,7 @@ html {
 
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
 }
 
 .menu a {
@@ -61,7 +61,7 @@ html {
     width: 160px;
 }
 
-.icons svg{
+.icons svg {
     width: 50px;
 
     color: black;
@@ -91,7 +91,7 @@ html {
 
 
 .icons {
-   margin-left: 25px;
+    margin-left: 25px;
     display: flex;
     align-items: center;
 
@@ -100,34 +100,37 @@ html {
 }
 
 #madu {
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
 #madu img {
-    height: 58vw;
+    height: 35vw;
+    margin-top: 25px;
 }
 
 #madu h2 {
     position: absolute;
-    bottom: 60px;
-    right: 5vw;
+    bottom: 50px;
+    right: 15vw;
 
     font-family: "lexend";
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
 
     color: #ffffff;
 }
 
 #sobre p {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 100px;
     margin-right: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 
 
     font-family: "merge";
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 400;
 
     color: #000000;
@@ -147,12 +150,12 @@ html {
     padding-bottom: 50px;
 
     font-family: "Lexend";
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     color: #000000;
 
     background-color: #ffffff;
-    width: 580px;
+    width: 600px;
 
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -161,16 +164,16 @@ html {
 }
 
 #trabalho .descricao .grid-texto {
-    margin-top: 100px;
+    margin-top: 270px;
 
-    padding-top: 60px;
+    padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 160px;
+    padding-bottom: 500px;
 
-    
+
     font-family: "merge";
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 400;
     color: #000000;
 
@@ -189,9 +192,58 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+
+    margin-top: 100px;
+
 }
 
 .cases .cards img {
-width: 500px;
+    width: 500px;
+}
+
+.cases .cards h2 {
+    position: relative;
+    bottom: 80px;
+
+    font-family: "lexend";
+    font-size: 30px;
+    font-weight: 600;
+
+    width: 100px;
+
+    color: #ffffff;
+}
+
+.cases .card1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cases .card2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linha-cortada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1px;
+    margin: 20px 0;
+
+    justify-content: center;
+}
+
+.parte {
+    height: 2px;
+    background-color: #e1e1e1;
+    margin: 0 0 5px 5px;
+
+}
+
+.parte:nth-child(1) {
+   margin-top: 200px;
+    width: 70%;
 }
