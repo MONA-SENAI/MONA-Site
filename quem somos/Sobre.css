@@ -25,13 +25,12 @@ html {
 }
 
 .menu {
-    width: 95vw;
+    width: 100vw;
     max-width: 1500px;
-
-    margin-left: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -58,11 +57,14 @@ html {
 }
 
 .menu img {
-    width: 160px;
+    width: 150px;
+
+    display: flex;
+
+    cursor: pointer;
 }
 
-.icons svg {
-    width: 50px;
+#icons .carrinho svg {
 
     color: black;
 
@@ -74,29 +76,37 @@ html {
 
 }
 
-.icons svg:hover {
+#icons .carrinho svg:hover {
     text-decoration: #784E45;
     color: #784E45;
 }
 
 .seções {
-    width: 25vw;
+    width: 30vw;
 
     display: flex;
-    justify-content: space-between;
-
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.carrinho {
+    width: 35px;
+    height: 35px;
+}
 
-.icons {
-    margin-left: 25px;
+#icons {
+    width: 98vw;
+
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
 
-    justify-content: space-around;
-    flex-direction: column;
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 #madu {
@@ -128,6 +138,8 @@ html {
     margin-right: 70px;
     margin-bottom: 70px;
 
+    text-align: justify;
+
 
     font-family: "merge";
     font-size: 20px;
@@ -138,7 +150,7 @@ html {
 
 #trabalho {
     background-image: url(img/planta.png);
-    height: 72vw;
+
     background-size: contain;
     background-repeat: no-repeat
 }
@@ -149,13 +161,15 @@ html {
     padding-right: 50px;
     padding-bottom: 50px;
 
+    max-width: 600px;
+    width: 100%;
+
     font-family: "Lexend";
     font-size: 40px;
     font-weight: 400;
     color: #000000;
 
     background-color: #ffffff;
-    width: 600px;
 
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -186,6 +200,7 @@ html {
 
 #trabalho .descricao .grid-texto p {
     padding-top: 70px;
+    text-align: justify;
 }
 
 .cases .cards {
@@ -195,19 +210,27 @@ html {
 
     margin-top: 100px;
 
+    flex-wrap: wrap;
+
 }
 
 .cases .cards img {
-    width: 500px;
+    max-width: 300px;
+    width: 100%;
+    
 }
 
 .cases .cards h2 {
+    display: flex;
+    justify-content: center;
     position: relative;
-    bottom: 80px;
+    bottom: 120px;
 
     font-family: "lexend";
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
+
+    text-align: center;
 
     width: 100px;
 
@@ -238,12 +261,37 @@ html {
 
 .parte {
     height: 2px;
-    background-color: #e1e1e1;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(163, 65, 65));
     margin: 0 0 5px 5px;
 
 }
 
 .parte:nth-child(1) {
-   margin-top: 200px;
+    margin-top: 255px;
     width: 70%;
+}
+
+/* @media (max-width: 400px) {
+    #madu img { 
+        height: 200vw;
+
+    }
+} */
+
+@media (max-width: 800px) {
+    #trabalho .topico p {
+        font-size: 25px;
+    }
+
+
+}
+
+@media  (min-width: 768px) {
+    .cases .cards img {
+        max-width: 500px;
+    }
+    .cases .cards h2 {
+        font-size: 35px;
+    }
+    
 }
