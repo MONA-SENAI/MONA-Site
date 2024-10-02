@@ -10,18 +10,23 @@
 
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 .menu {
-    width: 95vw;
+    width: 100vw;
     max-width: 1500px;
-
-    margin-left: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -48,11 +53,14 @@ html {
 }
 
 .menu img {
-    width: 160px;
+    width: 150px;
+
+    display: flex;
+
+    cursor: pointer;
 }
 
-.icons svg {
-    width: 50px;
+#icons .carrinho svg {
 
     color: black;
 
@@ -64,30 +72,33 @@ html {
 
 }
 
-.icons svg:hover {
+#icons .carrinho svg:hover {
     text-decoration: #784E45;
     color: #784E45;
 }
 
 .seções {
-    width: 25vw;
+    width: 30vw;
 
     display: flex;
-    justify-content: space-between;
-
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-
-.icons {
-
-    display: flex;
-    align-items: center;
-
     justify-content: space-around;
-    flex-direction: column;
+    align-items: center;
 }
+
+.carrinho {
+    width: 35px;
+    height: 35px;
+}
+
+#icons {
+    width: 98vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
 
 .banner1 img {
@@ -112,21 +123,21 @@ html {
 .sobre1 {
     font-size: 20px;
 
-    padding-top: 30px;
+    padding-top: 40px;
     font-family: "merge one";
     width: 1400px;
 }
 
 .sobre2 {
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
     font-family: "merge one";
 
 }
 
 .sobre3 {
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
     font-family: "merge one";
     width: 1400px;
 
@@ -136,13 +147,14 @@ html {
     font-family: "marge one";
     font-size: 30px;
     margin-left: 580px;
+    margin-top: 50px;
 }
 
 .container {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
 
 
 }
@@ -162,8 +174,9 @@ html {
 
 
 .linha {
-    width: 1400px;
-    margin-top: 10px;
+    margin-left: 50px;
+    width: 1390px;
+    height: 5px;
 }
 
 
@@ -178,7 +191,7 @@ html {
     height: 40px;
     background-color: #666258;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     margin-left: 48px;
 }
 
@@ -187,8 +200,9 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #5E7498;
+
 }
 
 .bolinha2 {
@@ -196,7 +210,7 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #CD55BA;
 }
 
@@ -205,7 +219,7 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #909090;
 }
 
@@ -214,7 +228,7 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #000000;
 }
 
@@ -223,8 +237,8 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
-    margin-left: 109px;
+    margin: 4px;
+    margin-left: 115px;
 
     background-color: #716967;
 }
@@ -234,7 +248,7 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #A3A0A3;
 }
 
@@ -243,17 +257,17 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #000;
 
 }
 
 .bolinha8 {
     display: flex;
-    height: 40px;
-    width: 40px;
+    height: 38px;
+    width: 38px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     border: 1px solid black;
     background-color: #FFFF;
 
@@ -265,9 +279,9 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #692532;
-    margin-left: 150px;
+    margin-left: 162px;
 }
 
 .bolinha10 {
@@ -275,7 +289,7 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #C6B4A5;
 
 }
@@ -285,17 +299,17 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #000000;
 
 }
 
 .bolinha13 {
     display: flex;
-    height: 40px;
-    width: 40px;
+    height: 38px;
+    width: 38px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     border: 1px solid black;
     background-color: #FFFF;
 
@@ -304,11 +318,11 @@ html {
 .bolinha14 {
     background-color: white;
     border: 1px solid black;
-    width: 39px;
-    height: 39px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
-    margin: 5px;
-    margin-left: 160px;
+    margin: 4px;
+    margin-left: 170px;
 }
 
 
@@ -317,7 +331,7 @@ html {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: 5px;
+    margin: 4px;
     background-color: #ED6D84;
 
 }
@@ -330,13 +344,13 @@ html {
 
 .bolas {
     display: flex;
-
+    margin-top: 10px;
 
 }
 
 .bola {
     width: 40px;
-    /* Ajuste o tamanho do círculo */
+
     height: 40px;
     /* Deve ser igual à largura para ser um círculo */
     background-color: white;
@@ -352,10 +366,9 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
-    /* Fonte do texto */
+    font-family: "merge one";
     border: 1px solid black;
-    margin-left: 49px;
+    margin-left: 48px;
 }
 
 .bola1 {
@@ -376,7 +389,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 4px;
@@ -401,7 +414,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -426,7 +439,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -450,10 +463,10 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
-    margin-left: 169px;
+    margin-left: 172px;
 }
 
 .bola5 {
@@ -474,7 +487,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -499,7 +512,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -524,7 +537,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -548,11 +561,11 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
-    margin-left: 169px;
-   
+    margin-left: 167px;
+
 }
 
 .bola9 {
@@ -573,7 +586,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -598,7 +611,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -623,7 +636,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -647,10 +660,10 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
-    margin-left: 170px;
+    margin-left: 175px;
 }
 
 .bola13 {
@@ -671,7 +684,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -696,7 +709,7 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
@@ -721,37 +734,58 @@ html {
     /* Centraliza o texto */
     font-size: 16px;
     /* Tamanho da fonte */
-    font-family: Arial, sans-serif;
+    font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
     margin-left: 5px;
 }
 
+.banners {
+    display: flex;
+    align-items: center;
+}
+
+.banners img {
+    max-width: 700px;
+    margin-left: 34px;
+    margin-top: 40px;
+}
+
 .banner2 img {
     height: 550px;
     width: 1450px;
+    margin-top: 40px;
+    margin-left: 25px;
+
+
+}
+
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    font-family: "Lexend Giga";
+    gap: 150px;
+
+}
+
+.contato > div {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.foto {
+    max-width: 350px;
+    margin-left: 100px;
     margin-top: 30px;
-    margin-left: 25px;
-
-
-}
-
-.quadrado {
-    width: 1000px;
-    height: 550px;
-    background-color: #CBC8C8;
-    margin-top: 25px;
-    margin-left: 250px;
-}
-
-.quadrado img {
-    margin-top: 20px;
-    width: 330px;
-    height: 500px;
-    margin-left: 25px;
-}
-
-.quadrado p {
-    font-family: "merge one";
 
 }
