@@ -89,10 +89,18 @@ html {
 }
 
 #icons {
-    width: 98svw;
+    width: 98vw;
     
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
  
