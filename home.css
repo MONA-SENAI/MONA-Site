@@ -105,7 +105,7 @@ html {
     height: 450px;
     width: 1450px;
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 30px;
 
 }
 
@@ -176,7 +176,8 @@ html {
 .linha {
     margin-left: 50px;
     width: 1390px;
-    height: 5px;
+    height: 10px;
+    margin-top: 10px;
 }
 
 
@@ -184,6 +185,7 @@ html {
 
 .bolinhas {
     display: flex;
+    margin-top: 4px;
 }
 
 .bolinha {
@@ -192,7 +194,7 @@ html {
     background-color: #666258;
     border-radius: 50%;
     margin: 4px;
-    margin-left: 48px;
+    margin-left: 55px;
 }
 
 .bolinha1 {
@@ -281,7 +283,7 @@ html {
     border-radius: 50%;
     margin: 4px;
     background-color: #692532;
-    margin-left: 162px;
+    margin-left: 165px;
 }
 
 .bolinha10 {
@@ -368,7 +370,7 @@ html {
     /* Tamanho da fonte */
     font-family: "merge one";
     border: 1px solid black;
-    margin-left: 48px;
+    margin-left: 54px;
 }
 
 .bola1 {
@@ -466,7 +468,7 @@ html {
     font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
-    margin-left: 172px;
+    margin-left: 175px;
 }
 
 .bola5 {
@@ -564,7 +566,7 @@ html {
     font-family: "merge one";
     /* Fonte do texto */
     border: 1px solid black;
-    margin-left: 167px;
+    margin-left: 182px;
 
 }
 
@@ -749,6 +751,11 @@ html {
     max-width: 700px;
     margin-left: 34px;
     margin-top: 40px;
+}
+.banners1 img {
+    max-width: 700px;
+    margin-left: 34px;
+    margin-top: 33px;
 }
 
 .banner2 img {
