@@ -77,6 +77,7 @@ body {
 .carrinho {
     width: 35px;
     height: 35px;
+    padding-bottom: 10px;
 }
 
 #icons {
@@ -93,7 +94,7 @@ body {
     }
 }
 
-.banner {
+.banner { 
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -104,6 +105,8 @@ body {
     background-image: url('C:/Users/40266067832/Desktop/MONA-Site/produtos/imgs/Lookbook.png');
     background-size: cover;
     background-position: center;
+    width: 100%; /* Responsivo - largura total da tela */
+    height: 800px;
 }
 
 .banner p {
@@ -133,43 +136,45 @@ body {
 
 .categorias {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    margin: 20px; /* Espaçamento em volta da seção */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
 }
 
-.categorias .item {
-    position: relative; /* Necessário para posicionar o texto sobre a imagem */
-    margin: 20px; /* Aumenta o espaçamento entre os itens */
+.categorias .nicho {
+    position: relative;
+    margin: 40px;
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
 }
 
 .categorias img {
-    border-radius: 50%; /* Imagens redondas */
-    width: 100px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
-    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    opacity: 0.9;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .categorias img:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.1);
 }
 
-.categorias p {
-    position: absolute; /* Permite que o texto se sobreponha à imagem */
-    bottom: 10px; /* Posiciona o texto na parte inferior da imagem */
-    left: 50%; /* Centraliza o texto horizontalmente */
-    transform: translateX(-50%); /* Ajusta a posição do texto para centralizá-lo */
-    color: white; /* Cor do texto */
-    font-family: 'Lexend', sans-serif; /* Fonte do texto */
-    font-weight: bold; /* Negrito */
-    text-align: center; /* Centraliza o texto */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhor contraste */
-    border-radius: 5px; /* Arredonda os cantos do fundo do texto */
-    padding: 5px; /* Espaçamento em volta do texto */
+.categorias a {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(245, 242, 242);
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
 }
 
 .escolhas {
@@ -180,7 +185,7 @@ body {
 
 .escolhas h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: lighter;
     margin-bottom: 30px;
     color: #333;
 }
@@ -217,8 +222,22 @@ body {
 
 .carrossel .item p {
     font-size: 20px; /* Tamanho da fonte do texto */
-    color: #333; /* Cor do texto */
+    color: #333; 
     margin: 0; /* Remove margens padrão do parágrafo */
+}
+
+.color-options {
+    margin-top: 10px; 
+}
+
+.color-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #ddd; 
+    cursor: pointer;
 }
 
 
@@ -233,3 +252,4 @@ body {
         grid-template-columns: 1fr; /* Exibe um item por linha em telas muito pequenas */
     }
 }
+
