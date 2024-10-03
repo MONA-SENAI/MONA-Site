@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.conteudo .icons svg {
+    width: 35px;
+    height: 35px;
+}
+
+.conteudo .logo svg {
+    width: 150px;
+}
+
+
