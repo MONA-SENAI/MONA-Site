@@ -61,6 +61,7 @@ html {
 #categorias .carrinho svg {
     width: 50px;
 
+
     color: black;
 
     text-decoration: underline transparent;
@@ -96,6 +97,8 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    margin-right: 10px;
 }
 
 ul {
@@ -471,8 +474,8 @@ ul {
  @media (max-width: 600px) {
     
     .carrinho svg {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
     }
     
     .icon {
@@ -649,7 +652,7 @@ ul {
  @media (max-width: 500px) {
     .menu {
         display: flex;
-        align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
 }
