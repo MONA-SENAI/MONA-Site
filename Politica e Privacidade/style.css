@@ -5,9 +5,8 @@
 
 @font-face {
     font-family: "Lexend";
-    src: url(fonts/LexendGiga-VariableFont_wght.ttf);
+    src: url(Font/LexendGiga-VariableFont_wght.ttf);
 }
-
 
 
 * {
@@ -21,17 +20,17 @@ html {
 }
 
 .menu {
-    width: 95vw;
+    width: 100vw;
     max-width: 1500px;
-
-    margin-left: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
+
 }
 
 .menu a {
@@ -54,10 +53,265 @@ html {
 }
 
 .menu img {
-    width: 160px;
+    width: 150px;
+
+    display: flex;
+
+    cursor: pointer;
 }
 
-.icons svg{
+#icons .carrinho svg {
+
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+
+}
+
+#icons .carrinho svg:hover {
+    text-decoration: #784E45;
+    color: #784E45;
+}
+
+.seções {
+    width: 30vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carrinho {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 5px;
+}
+
+#icons {
+    width: 98vw;
+
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.conteudo-imagem {
+    height: 565px;
+
+    display: flex;
+
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+.sobre {
+    margin-top: 100px;
+    margin-left: 35px;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+    font-family: "Lexend";
+    font-size: 35px;
+}
+
+.sobre h1 {
+    font-size: 35px;
+}
+
+.conteudo-text {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.introduçao h1,
+.introduçao p {
+    max-width: 1210px;
+    margin-right: 215px;
+    margin-left: 215px;
+
+    font-family: "Mergeone";
+}
+
+.introduçao h1 {
+    /* margin-top: 50px; */
+    margin-bottom: 10px;
+
+
+}
+
+.introduçao p {
+    margin-bottom: 20px;
+}
+
+.coleta h1,
+.coleta p {
+    max-width: 1210px;
+    margin-right: 215px;
+    margin-left: 215px;
+
+    font-family: "Mergeone";
+}
+
+.coleta h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+
+.coleta p {
+    margin-bottom: 20px;
+
+
+}
+
+.informações h1,
+.informações p {
+    max-width: 1210px;
+    margin-right: 215px;
+    margin-left: 215px;
+
+    font-family: "Mergeone";
+}
+
+.informações h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.informações p {
+    margin-bottom: 20px;
+}
+
+.compartilhamento h1,
+.compartilhamento p {
+    max-width: 1210px;
+    margin-right: 215px;
+    margin-left: 215px;
+
+    font-family: "Mergeone";
+}
+
+.compartilhamento h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.compartilhamento p {
+    margin-bottom: 20px;
+}
+
+
+.segurança h1,
+.segurança p {
+    max-width: 1210px;
+    margin-right: 215px;
+    margin-left: 215px;
+
+    font-family: "Mergeone";
+}
+
+.segurança h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.segurança p {
+    margin-bottom: 20px;
+}
+
+.direitos h1,
+.direitos p {
+    max-width: 1210px;
+    margin-right: 215px;
+    margin-left: 215px;
+
+    font-family: "Mergeone";
+}
+
+.direitos h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.direitos p {
+    margin-bottom: 20px;
+}
+
+.alteraçoes h1,
+.alteraçoes p {
+    max-width: 1210px;
+    margin-right: 215px;
+    margin-left: 215px;
+
+    font-family: "Mergeone";
+}
+
+.alteraçoes h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.alteraçoes p {
+    margin-bottom: 20px;
+}
+
+.contato h1,
+.contato p {
+    max-width: 1210px;
+    margin-right: 215px;
+    margin-left: 215px;
+
+    font-family: "Mergeone";
+}
+
+.contato h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    margin-bottom: 20px;
+}
+
+.fooder-icons {
+
+    width: 95vw;
+    max-width: 1500px;
+
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.fooder-icons button {
+
     width: 50px;
 
     color: black;
@@ -70,103 +324,39 @@ html {
 
 }
 
-.icons svg:hover {
-    text-decoration: #784E45;
-    color: #784E45;
-}
-
-.seções {
-    width: 25vw;
-
-    display: flex;
-    justify-content: space-between;
-
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-
-.icons {
-    display: flex;
-    align-items: center;
-
-    justify-content: space-around;
-    flex-direction: column;
-
-    margin-left: 25px;
-
-}
-
-.conteudo-imagem {
-     height: 565px;
-
-    display: flex;
-
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-}
-
-.sobre {
-    margin-top: 30px;
-    margin-left: 35px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
-    text-align: center;
-  }
-
-.sobre h1 {
-    font-size: 35px;
-}
-
-/////////////////////
-
-.fooder-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
 
 .sociais {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+
     justify-content: space-between;
-    
+
     margin-left: 550px;
     margin-right: 550px;
-    
+    gap: 25px;
+    margin-top: 100px;
 }
 
 .sociais img {
     width: 160px;
 }
+
 .sociais svg {
     width: 35px;
     height: 35px;
 
     color: black;
 
-    text-decoration: underline transparent;
+    /* text-decoration: underline transparent;
     text-decoration-thickness: 1px;
-    transition: text-decoration, color 600ms ease;
+    transition: text-decoration, color 600ms ease; */
 
     cursor: pointer;
+
+
 }
 
 .sociais svg:hover {
-    text-decoration: #784E45;
     color: #784E45;
 }
-
-
-
-
