@@ -108,13 +108,23 @@ html {
 }
 
 .conteudo-imagem {
+    margin-top: 20px;
     height: 565px;
 
     display: flex;
+    
 
     /* background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
+}
+
+@media (max-width: 1250px) {
+    .conteudo-imagem {
+       
+
+        
+    }
 }
 
 .sobre {
