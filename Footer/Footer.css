@@ -8,20 +8,52 @@ html {
     scroll-behavior: smooth;
 }
 
-.conteudo {
+.fooder-icons {
+   width: 95vw;
+   max-width: 1500px;
+    
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: row;
+    justify-content: space-around;
+
+    padding: 20px;
 }
 
-.conteudo .icons svg {
+.fooder-icons svg {
     width: 35px;
     height: 35px;
 }
 
-.conteudo .logo svg {
-    width: 150px;
+.fooder-icons .monã {
+    width: 140px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.fooder-icons svg {
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+}
+
+.fooder-icons svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
 }
 
 

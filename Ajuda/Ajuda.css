@@ -51,7 +51,7 @@ html {
 }
 
 .menu img {
-    width: 150px;
+    width: 140px;
     display: flex;
     justify-content: center;
 
@@ -297,6 +297,57 @@ ul {
 .categoria-suporte li {
     margin-left: 30px;
 }
+
+.fooder-icons {
+    width: 100vw;
+    max-width: 1500px;
+     
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-around;
+ 
+     padding: 20px;
+ }
+ 
+ .fooder-icons svg {
+     width: 35px;
+     height: 35px;
+ }
+ 
+ .fooder-icons .monãpng {
+     width: 140px;
+     margin-bottom: 10px;
+ 
+     cursor: pointer;
+ }
+ 
+ .sociais {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ 
+    
+     margin-top: 20px;
+     gap: 25px;
+ }
+ 
+ .fooder-icons svg {
+     color: black;
+ 
+     text-decoration: underline transparent;
+     text-decoration-thickness: 1px;
+     transition: text-decoration, color 600ms ease;
+ 
+     cursor: pointer;
+ }
+ 
+ .fooder-icons svg:hover {
+     text-decoration-color: #784E45;
+     color: #784E45;
+ }
+ 
 
  @media (max-width: 1000px) {
 
