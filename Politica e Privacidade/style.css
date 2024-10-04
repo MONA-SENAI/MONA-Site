@@ -108,14 +108,33 @@ html {
 }
 
 .conteudo-imagem {
-    height: 565px;
+    margin-top: 20px;
+    /* height: 565px; */
 
     display: flex;
+    
 
     /* background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
 }
+
+@media (max-width: 1250px) {
+    .conteudo-imagem {
+        width: 100%;
+        
+    }
+}
+
+@media (min-width: 600px) {
+    .conteudo-imagem {
+        width: 100%;
+         
+          
+    }
+}
+
+
 
 .sobre {
     margin-top: 100px;
@@ -291,72 +310,50 @@ html {
 }
 
 .fooder-icons {
+    width: 100%;
+    margin-top: 75px;
+     
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-around;
+ 
+     padding: 20px;
+ }
+ 
+ .fooder-icons svg {
+     width: 35px;
+     height: 35px;
+ }
+ 
+ .fooder-icons .monã {
+     width: 140px;
+     margin-bottom: 10px;
+ 
+     cursor: pointer;
+ }
+ 
+ .sociais {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ 
+     gap: 25px;
+ }
+ 
+ .fooder-icons svg {
+     color: black;
+ 
+     text-decoration: underline transparent;
+     text-decoration-thickness: 1px;
+     transition: text-decoration, color 600ms ease;
+ 
+     cursor: pointer;
+ }
+ 
+ .fooder-icons svg:hover {
+     text-decoration-color: #784E45;
+     color: #784E45;
+ }
 
-    width: 95vw;
-    max-width: 1500px;
-
-    margin-left: 40px;
-
-    display: flex;
-    justify-content: space-between;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.fooder-icons button {
-
-    width: 50px;
-
-    color: black;
-
-    text-decoration: underline transparent;
-    text-decoration-thickness: 1px;
-    transition: text-decoration, color 600ms ease;
-
-    cursor: pointer;
-
-}
-
-
-.sociais {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    justify-content: space-between;
-
-    margin-left: 550px;
-    margin-right: 550px;
-    gap: 25px;
-    margin-top: 100px;
-}
-
-.sociais img {
-    width: 160px;
-}
-
-.sociais svg {
-    width: 35px;
-    height: 35px;
-
-    color: black;
-
-    /* text-decoration: underline transparent;
-    text-decoration-thickness: 1px;
-    transition: text-decoration, color 600ms ease; */
-
-    cursor: pointer;
-
-
-}
-
-.sociais svg:hover {
-    color: #784E45;
-}
