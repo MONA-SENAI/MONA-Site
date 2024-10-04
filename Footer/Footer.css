@@ -9,8 +9,7 @@ html {
 }
 
 .fooder-icons {
-   width: 95vw;
-   max-width: 1500px;
+   width: 100%;
     
     display: flex;
     align-items: center;

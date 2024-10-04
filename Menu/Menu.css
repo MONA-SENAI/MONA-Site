@@ -103,6 +103,15 @@ html {
         align-items: center;
         flex-direction: column;
     }
+
+    .seções {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .produto {
+        margin-left: 20px;
+    }
 }
 
  
