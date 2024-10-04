@@ -96,24 +96,3 @@ html {
     display: flex;
     justify-content: center;
 }
-
-@media (max-width: 500px) {
-    .menu {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .seções {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        margin-top:20px ;
-    }
-
-    .produto {
-        margin-left: 25px;
-    }
-}
-
- 

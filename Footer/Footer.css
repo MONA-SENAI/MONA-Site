@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fooder-icons {
+   width: 100%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 20px;
+}
+
+.fooder-icons svg {
+    width: 35px;
+    height: 35px;
+}
+
+.fooder-icons .monã {
+    width: 140px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.fooder-icons svg {
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+}
+
+.fooder-icons svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+
