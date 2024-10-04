@@ -113,7 +113,8 @@ body {
     font-family: 'Playfair Display';
     font-size: 50px;
     margin-top: 20px;
-    color: #333;
+    color: #d5d5d5;
+    opacity: 50%;
     animation: scroll-text 15s linear infinite;
     white-space: nowrap;
     display: inline-block;
@@ -197,33 +198,45 @@ body {
     padding: 20px; /* Espaçamento interno no carrossel */
 }
 
+.carrossel:hover {
+    transform: scale();
+}
+
 .carrossel .item {
-    background-color: #f7f7f7; /* Cor de fundo dos itens */
-    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #f7f7f7; 
+    border-radius: 8px; 
     padding: 10px; /* Espaçamento interno nos itens */
-    display: flex; /* Usado para empilhar imagem e texto */
-    flex-direction: column; /* Coloca o conteúdo em coluna */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    text-align: center; /* Centraliza o texto */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
 }
 
 .carrossel .item img {
     width: 100%; /* Largura da imagem ocupa 100% do item */
     height: 500px; /* Altura fixa para tornar a imagem quadrada */
     object-fit: cover; /* Corta a imagem se necessário para preencher o espaço */
-    border-radius: 5px; /* Arredonda os cantos da imagem */
+    border-radius: 5px; 
     margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
 }
 
-.carrossel .item:hover {
-    transform: scale(1.05);
+.carrossel .item p {
+    font-size: 20px; 
+    color: #333; 
+    margin: 0; 
 }
 
-.carrossel .item p {
-    font-size: 20px; /* Tamanho da fonte do texto */
-    color: #333; 
-    margin: 0; /* Remove margens padrão do parágrafo */
+@media (max-width: 1024px) {
+    .carrossel {
+        grid-template-columns: repeat(2, 1fr); /* Exibe dois itens por linha em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .carrossel {
+        grid-template-columns: 1fr; /* Exibe um item por linha em telas muito pequenas */
+    }
 }
 
 .color-options {
@@ -240,16 +253,76 @@ body {
     cursor: pointer;
 }
 
+.color-circle:hover {
+    transform: scale(1.09);
+    animation: wosh 0.5s linear;
+}
 
-@media (max-width: 1024px) {
-    .carrossel {
-        grid-template-columns: repeat(2, 1fr); /* Exibe dois itens por linha em telas menores */
+@keyframes wosh {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(3px);
     }
 }
 
-@media (max-width: 768px) {
-    .carrossel {
-        grid-template-columns: 1fr; /* Exibe um item por linha em telas muito pequenas */
-    }
+/* Footer */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.fooder-icons {
+   width: 95vw;
+   max-width: 1500px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 20px;
+}
+
+.fooder-icons svg {
+    width: 35px;
+    height: 35px;
+}
+
+.fooder-icons .monã {
+    width: 140px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.fooder-icons svg {
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+}
+
+.fooder-icons svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
