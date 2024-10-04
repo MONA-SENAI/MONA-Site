@@ -107,10 +107,12 @@ html {
     .seções {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top:20px ;
     }
 
     .produto {
-        margin-left: 20px;
+        margin-left: 25px;
     }
 }
 
