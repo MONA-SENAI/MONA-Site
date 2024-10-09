@@ -1,84 +1,104 @@
 * {
   margin: 0;
   padding: 0%;
-  box-sizing: border-box;
-}
-/*menu*/
-body 
+  box-sizing: border-box;}
 
-.menu {
-  width: 95vw;
-  max-width: 1500px;
+  .menu {
+    width: 100vw;
+    max-width: 1500px;
 
-  margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  display: flex;
-  justify-content: space-between;
-
-  margin-top: 20px;
-  margin-bottom: 20px;
-  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
 .menu a {
-  font-family: "Merge";
-  font-size: 20px;
-  font-weight: 500;
+    font-family: "Mergeone";
+    font-size: 20px;
+    font-weight: 500;
 
-  color: black;
+    color: black;
 
-  text-decoration: underline transparent;
-  text-decoration-thickness: 1px;
-  transition: text-decoration, color 600ms ease;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
 
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 .menu a:hover {
-  text-decoration-color: #784E45;
-  color: #784E45;
+    text-decoration-color: #784E45;
+    color: #784E45;
 }
 
 .menu img {
-  width: 160px;
+    width: 150px;
+
+    display: flex;
+    
+    cursor: pointer;
 }
 
-.icons svg{
-  width: 50px;
+#icons .carrinho svg{
 
-  color: black;
+    color: black;
 
-  text-decoration: underline transparent;
-  text-decoration-thickness: 1px;
-  transition: text-decoration, color 600ms ease;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
 
-  cursor: pointer;
+    cursor: pointer;
 
 }
 
-.icons svg:hover {
-  text-decoration: #784E45;
-  color: #784E45;
+#icons .carrinho svg:hover {
+    text-decoration: #784E45;
+    color: #784E45;
 }
 
 .seções {
-  width: 25vw;
+    width: 30vw;
 
-  display: flex;
-  justify-content: space-between;
-
-  margin-left: 200px;
-  margin-right: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.carrinho{
+      width: 40px;
+      height: 40px;
 
-.icons {
- 
-  display: flex;
-  align-items: center;
+      margin-right: 5px;
+}
 
-  justify-content: space-around;
-  flex-direction: column;
+#icons {
+    width: 98vw;
+    
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .seções {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top:20px ;
+    }
+
+    .produto {
+        margin-left: 25px;
+    }
 }
 
 /*menu*/
@@ -189,30 +209,23 @@ textarea {
 }
 
 button {
-  align-items: center;
-
-  
-  background-color: #D2E59E;
-  /* Cor de fundo */
-  color: white;
-  /* Cor do texto */
-  padding: 10px 20px;
-  /* Espaçamento interno */
-  border: none;
-  /* Sem borda */
-  border-radius: 48px;
-  /* Bordas arredondadas */
-  cursor: pointer;
-  /* Cursor de ponteiro */
-  font-size: 16px;
-  /* Tamanho da fonte */
-  transition: background-color 0.3s;
-  /* Transição suave */
+  background-color: #D2E59E; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 10px 20px;  /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 48px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro */
+  font-size: 16px;  /* Tamanho da fonte */
+  transition: background-color 0.3s; /* Transição suave */
   margin-bottom: 20px;
   margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button:hover {
+ 
   
   background-color: #B8D98C;
   /* Cor de fundo ao passar o mouse */
@@ -222,41 +235,62 @@ input[type=enviar]:hover {
   background-color: #45a049;}
 
 
-  
-
-/*FOOTER*/
-
-footer {
-  background-color: #B8D98C;         /* Cor de fundo do footer */
-  color: white;                   /* Cor do texto */
-  text-align: center;             /* Centraliza o texto */
-  padding: 20px 0;                /* Espaçamento interno */
-  position: relative;             /* Para garantir que tudo fique alinhado */
-  bottom: -10%;                   /*parte de baixo do footer*/
-
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-footer nav {
-  margin: 10px 0;                 /* Margem em cima e embaixo */
- 
+html {
+    scroll-behavior: smooth;
 }
 
-footer a {
-  color: white;                   /* Cor dos links */
-  text-decoration: none;          /* Remove o sublinhado */
-  margin: 0 15px;                /* Espaçamento entre os links */
+.fooder-icons {
+   width: 100%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 20px;
 }
 
-footer a:hover {
-  text-decoration: underline;     /* linha de contorno no item*/
+.fooder-icons svg {
+    width: 35px;
+    height: 35px;
 }
 
-.social-icons {
-  margin-top: 10px;               /* Margem de cima do icone */
+.fooder-icons .monã {
+    width: 140px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
 }
 
-.social-icons img {
-  width: 24px;                    /* Tamanho dos ícones */
-  margin: 0 5px;                  /* Espaçamento entre os ícones */
+.sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
 }
+
+.fooder-icons svg {
+    color: black;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+    cursor: pointer;
+}
+
+.fooder-icons svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+
+
+
+
  
