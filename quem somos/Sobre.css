@@ -260,14 +260,8 @@ html {
     justify-content: center;
 }
 
-.parte {
-    height: 2px;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(192, 192, 192));
-    margin: 0 0 5px 5px;
 
-}
-
-.parte:nth-child(1) {
+.partes:nth-child(1) {
     margin-top: 255px;
     width: 70%;
 }
