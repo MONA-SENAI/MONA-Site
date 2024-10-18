@@ -1,12 +1,11 @@
 @font-face {
   font-family:"Mergeone";
-  src: url(/Contato/FONTE/merge-one-cufonfonts/MergeOne-Regular.ttf);
+  src: url(FONTE/merge-one-cufonfonts/MergeOne-Regular.ttf);
 }
 @font-face {
   font-family: "Lexend";
-  src: url(/Contato/FONTE/Lexend_Giga/LexendGiga-VariableFont_wght.ttf);
+  src: url(FONTE/Lexend_Giga/LexendGiga-VariableFont_wght.ttf);
 }
-
 *
 {
   margin: 0;
@@ -27,57 +26,49 @@ html {
   align-items: center;
 
   margin-top: 20px;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; 
 }
 
 .menu a {
   font-family: "Mergeone";
   font-size: 20px;
   font-weight: 500;
-
   color: black;
-
   text-decoration: underline transparent;
   text-decoration-thickness: 1px;
   transition: text-decoration, color 600ms ease;
-
   margin-top: 15px;
 }
-
 .menu a:hover {
   text-decoration-color: #784E45;
   color: #784E45;
 }
-
 .menu img {
   width: 150px;
-
   display: flex;
-  
   cursor: pointer;
 }
-
 #icons .carrinho svg{
-
   color: black;
-
   text-decoration: underline transparent;
   text-decoration-thickness: 1px;
   transition: text-decoration, color 600ms ease;
-
   cursor: pointer;
-
 }
 
 #icons .carrinho svg:hover {
   text-decoration: #784E45;
   color: #784E45;
 }
+.conteudo-imagem{
+  margin-top: 20px;
+  margin-bottom: 20px;
+width: 100%;
+height: 100%;
 
+}
 .seções {
   width: 30vw;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -86,7 +77,6 @@ html {
 .carrinho{
     width: 40px;
     height: 40px;
-
     margin-right: 5px;
 }
 
@@ -117,10 +107,7 @@ html {
   
 }
 
-
-select {
-  
-  
+select { 
   padding: 10px;
  
   border: 3px solid #f8f8f8;
@@ -134,34 +121,31 @@ select {
   margin-top: 15px;
   border: 3px solid#000000;  
   padding: 10px;
- 
 }
 
 #email {
   border: 3px solid#000000;
   padding: 10px;
   font-size: 13px
-
 }
-
-
 h1 {color: #000000; 
   text-align: center; 
+font-family: "Lexend";
+margin-bottom: 20px;
+margin-top: 20px;
   }
 h2 {
   color: #000000;
   text-align: center;
- 
+  font-family: "Lexend";
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
-
-
-
 
 textarea {
   min-height: auto;
   outline: none;
   width: 80%;
-  
 }
 .meio{
   display: flex;
@@ -171,7 +155,7 @@ textarea {
 input,
 select,
 textarea {
-  background-color: #FFF3DE;
+  background-color: #f1f1f1e4;
   border-radius: 48px;
   width: 80%;
   padding: 10px;
@@ -185,7 +169,6 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items:center;
-  
 }
 button {
   background-color: #000000; 
@@ -196,7 +179,7 @@ button {
   cursor: pointer; 
   font-size: 16px;  
   transition: background-color 0.3s; 
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   margin-top: 20px;
   display: block;
   margin-left: auto;
@@ -211,13 +194,12 @@ button:hover {
   color: #784E45;
 }
 .fooder-icons {
+  margin-top: 20px;
   width: 100%;
-   
    display: flex;
    align-items: center;
    flex-direction: row;
    justify-content: space-around;
-
    padding: 20px;
 }
 
