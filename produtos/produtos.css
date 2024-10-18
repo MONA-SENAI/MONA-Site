@@ -22,19 +22,307 @@ body {
     background-color: #f5f5f5;
 }
 
-.banner {
-    text-align: center;
-    background-image: url(produtos/imgs/Lookbook.png);
+.menu {
+    width: 100vw;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.banner img {
-    max-width: 100%;
-    height: auto;
+.menu a {
+    font-family: 'Merge One Regular';
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+    margin-top: 15px;
+}
+
+.menu a:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
+
+.menu img {
+    width: 150px;
+    display: flex;
+    cursor: pointer;
+}
+
+#icons .carrinho svg {
+    color: black;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+    cursor: pointer;
+}
+
+#icons .carrinho svg:hover {
+    text-decoration: #784E45;
+    color: #784E45;
+}
+
+.seções {
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carrinho {
+    width: 35px;
+    height: 35px;
+    padding-bottom: 10px;
+}
+
+#icons {
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.banner { 
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    background-image: url('C:/Users/40266067832/Desktop/MONA-Site/produtos/imgs/Lookbook.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Responsivo - largura total da tela */
+    height: 800px;
 }
 
 .banner p {
     font-family: 'Playfair Display';
-    font-size: 80px;
+    font-size: 50px;
     margin-top: 20px;
+    color: #d5d5d5;
+    opacity: 50%;
+    animation: scroll-text 15s linear infinite;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.banner-text-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.categorias .nicho {
+    position: relative;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.categorias img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #333;
+    opacity: 0.9;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.categorias img:hover {
+    transform: scale(1.1);
+}
+
+.categorias a {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(245, 242, 242);
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.escolhas {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.escolhas h2 {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 30px;
     color: #333;
+}
+
+.carrossel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibe três itens por linha */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px; /* Espaçamento interno no carrossel */
+}
+
+.carrossel:hover {
+    transform: scale();
+}
+
+.carrossel .item {
+    background-color: #f7f7f7; 
+    border-radius: 8px; 
+    padding: 10px; /* Espaçamento interno nos itens */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.carrossel .item img {
+    width: 100%; /* Largura da imagem ocupa 100% do item */
+    height: 500px; /* Altura fixa para tornar a imagem quadrada */
+    object-fit: cover; /* Corta a imagem se necessário para preencher o espaço */
+    border-radius: 5px; 
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.carrossel .item p {
+    font-size: 20px; 
+    color: #333; 
+    margin: 0; 
+}
+
+@media (max-width: 1024px) {
+    .carrossel {
+        grid-template-columns: repeat(2, 1fr); /* Exibe dois itens por linha em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .carrossel {
+        grid-template-columns: 1fr; /* Exibe um item por linha em telas muito pequenas */
+    }
+}
+
+.color-options {
+    margin-top: 10px; 
+}
+
+.color-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #ddd; 
+    cursor: pointer;
+}
+
+.color-circle:hover {
+    transform: scale(1.09);
+    animation: wosh 0.5s linear;
+}
+
+@keyframes wosh {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(3px);
+    }
+}
+
+/* Footer */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fooder-icons {
+   width: 95vw;
+   max-width: 1500px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 20px;
+}
+
+.fooder-icons svg {
+    width: 35px;
+    height: 35px;
+}
+
+.fooder-icons .monã {
+    width: 140px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.fooder-icons svg {
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+}
+
+.fooder-icons svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
 }

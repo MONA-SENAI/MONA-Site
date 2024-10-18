@@ -16,6 +16,7 @@
 }
 
 .container-grid {
+max-width: 1500px;
     width: 85vw;
     margin: 0 auto;
 }
@@ -25,17 +26,16 @@ html {
 }
 
 .menu {
-    width: 95vw;
+    width: 100vw;
     max-width: 1500px;
-
-    margin-left: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-top: 20px;
     margin-bottom: 20px;
-    
+
 }
 
 .menu a {
@@ -58,11 +58,14 @@ html {
 }
 
 .menu img {
-    width: 160px;
+    width: 150px;
+
+    display: flex;
+
+    cursor: pointer;
 }
 
-.icons svg{
-    width: 50px;
+#icons .carrinho svg {
 
     color: black;
 
@@ -74,60 +77,73 @@ html {
 
 }
 
-.icons svg:hover {
+#icons .carrinho svg:hover {
     text-decoration: #784E45;
     color: #784E45;
 }
 
 .seções {
-    width: 25vw;
+    width: 30vw;
 
     display: flex;
-    justify-content: space-between;
-
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.carrinho {
+    width: 35px;
+    height: 35px;
+}
 
-.icons {
-   margin-left: 25px;
+#icons {
+    width: 98vw;
+
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
 
-    justify-content: space-around;
-    flex-direction: column;
+@media (max-width: 500px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 #madu {
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
 #madu img {
-    height: 58vw;
+    height: 35vw;
+    margin-top: 25px;
 }
 
 #madu h2 {
     position: absolute;
-    bottom: 60px;
-    right: 5vw;
+    bottom: 50px;
+    right: 15vw;
 
     font-family: "lexend";
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
 
     color: #ffffff;
 }
 
 #sobre p {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 100px;
     margin-right: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
+
+    text-align: justify;
 
 
     font-family: "merge";
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 400;
 
     color: #000000;
@@ -135,7 +151,7 @@ html {
 
 #trabalho {
     background-image: url(img/planta.png);
-    height: 72vw;
+
     background-size: contain;
     background-repeat: no-repeat
 }
@@ -146,13 +162,15 @@ html {
     padding-right: 50px;
     padding-bottom: 50px;
 
+    max-width: 600px;
+    width: 100%;
+
     font-family: "Lexend";
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     color: #000000;
 
     background-color: #ffffff;
-    width: 580px;
 
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -161,16 +179,16 @@ html {
 }
 
 #trabalho .descricao .grid-texto {
-    margin-top: 100px;
+    margin-top: 270px;
 
-    padding-top: 60px;
+    padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 160px;
+    padding-bottom: 200px;
 
-    
+
     font-family: "merge";
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 400;
     color: #000000;
 
@@ -183,15 +201,166 @@ html {
 
 #trabalho .descricao .grid-texto p {
     padding-top: 70px;
+    text-align: justify;
 }
 
 .cases .cards {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+
+    margin-top: 55px;
+
+    flex-wrap: wrap;
+
 }
 
 .cases .cards img {
-width: 500px;
+    max-width: 300px;
+    width: 100%;
+    
+}
+
+.cases .cards h2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 120px;
+
+    font-family: "lexend";
+    font-size: 25px;
+    font-weight: 600;
+
+    text-align: center;
+
+    width: 100px;
+
+    color: #ffffff;
+}
+
+.cases .card1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cases .card2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.linha-cortada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1px;
+    margin: 20px 0;
+
+    justify-content: center;
+}
+
+.parte {
+    height: 2px;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(192, 192, 192));
+    margin: 0 0 5px 5px;
+
+}
+
+.parte:nth-child(1) {
+    margin-top: 255px;
+    width: 70%;
+}
+
+.fooder-icons {
+    width: 100%;
+     
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-around;
+ 
+     padding: 20px;
+ }
+ 
+ .fooder-icons svg {
+     width: 35px;
+     height: 35px;
+ }
+ 
+ .fooder-icons .monã {
+     width: 140px;
+     margin-bottom: 10px;
+ 
+     cursor: pointer;
+ }
+ 
+ .sociais {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ 
+     gap: 25px;
+ }
+ 
+ .fooder-icons svg {
+     color: black;
+ 
+     text-decoration: underline transparent;
+     text-decoration-thickness: 1px;
+     transition: text-decoration, color 600ms ease;
+ 
+     cursor: pointer;
+ }
+ 
+ .fooder-icons svg:hover {
+     text-decoration-color: #784E45;
+     color: #784E45;
+ }
+
+@media (max-width: 700px) {
+    #madu h2 {
+        font-size: 25px;
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    #trabalho .topico p {
+        font-size: 25px;
+    }
+
+}
+
+@media  (min-width: 768px) {
+    .cases .cards img {
+        max-width: 500px;
+    }
+    .cases .cards h2 {
+        font-size: 35px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+
+    .menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .seções {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top:20px ;
+    }
+
+    .produto {
+        margin-left: 25px;
+    }
+    
 }

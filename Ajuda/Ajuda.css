@@ -19,13 +19,12 @@ html {
 }
 
 .menu {
-    width: 94vw;
+    width: 100vw;
     max-width: 1500px;
-
-    margin-left: 40px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-top: 20px;
     margin-bottom: 20px;
@@ -52,11 +51,16 @@ html {
 }
 
 .menu img {
-    width: 160px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
 }
 
-#categorias svg {
+#categorias .carrinho svg {
     width: 50px;
+
 
     color: black;
 
@@ -67,30 +71,34 @@ html {
     cursor: pointer;
 }
 
-#categorias svg:hover {
+#categorias .carrinho svg:hover {
     text-decoration-color: #784E45;
     color: #784E45;
 }
 
 
 .seções {
-    width: 25vw;
+    width: 30vw;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 
-    margin-left: 200px;
-    margin-right: 200px;
+    
 }
 
+.icon {
+    width: 35px;
+    height: 35px;
+}
 
 #categorias {
 
     display: flex;
     align-items: center;
-
-    justify-content: space-around;
     flex-direction: column;
+
+    margin-right: 10px;
 }
 
 ul {
@@ -109,14 +117,15 @@ ul {
 
 #categorias li {
     font-family: "Mergeone";
-    font-size: 20px;
+    font-size: 18px;
     color: whitesmoke;
 
-    padding: 16px;
+    padding: 15px;
 }
 
 #categorias h1 {
     font-family: "Lexend";
+    font-size: 28px;
 
     margin-bottom: 15px;
 }
@@ -149,6 +158,14 @@ ul {
     border-radius: 50px;
 }
 
+.categoria-entregas .introdução {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-right: 710px;
+}
+
 .categoria-entregas h1 {
     margin-left: 30px;
 }
@@ -170,6 +187,14 @@ ul {
     margin-bottom: 30px;
 
     border-radius: 50px;
+}
+
+.categoria-reembolsos .introdução {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-right: 400px;
 }
 
 .categoria-reembolsos h1 {
@@ -195,6 +220,14 @@ ul {
     border-radius: 50px;
 }
 
+.categoria-problemas .introdução {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-right: 400px;
+}
+
 .categoria-problemas h1 {
     margin-left: 30px;
 }
@@ -216,6 +249,14 @@ ul {
     margin-bottom: 30px;
 
     border-radius: 50px;
+}
+
+.categoria-pagamento .introdução {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-right: 440px;
 }
 
 .categoria-pagamento h1 {
@@ -241,10 +282,428 @@ ul {
     border-radius: 50px;
 }
 
+.categoria-suporte .introdução {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-right: 570px;
+}
+
 .categoria-suporte h1 {
     margin-left: 30px;
 }
 
 .categoria-suporte li {
     margin-left: 30px;
+}
+
+.fooder-icons {
+    width: 100%;
+    
+     
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-around;
+ 
+     padding: 20px;
+ }
+ 
+ .fooder-icons svg {
+     width: 35px;
+     height: 35px;
+ }
+ 
+ .fooder-icons .monãpng {
+     width: 140px;
+     margin-bottom: 10px;
+ 
+     cursor: pointer;
+ }
+ 
+ .sociais {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ 
+    
+     margin-top: 20px;
+     gap: 25px;
+ }
+ 
+ .fooder-icons svg {
+     color: black;
+ 
+     text-decoration: underline transparent;
+     text-decoration-thickness: 1px;
+     transition: text-decoration, color 600ms ease;
+ 
+     cursor: pointer;
+ }
+ 
+ .fooder-icons svg:hover {
+     text-decoration-color: #784E45;
+     color: #784E45;
+ }
+ 
+
+ @media (max-width: 1000px) {
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+    
+    #categorias li {
+        font-family: "Mergeone";
+        font-size: 15px;
+        color: whitesmoke;
+    
+        padding: 15px;
+    }
+    
+    #categorias h1 {
+        font-family: "Lexend";
+        font-size: 20px;
+    
+        margin-bottom: 15px;
+    }
+    
+    .categoria-entregas {
+        height: 220px;
+        width: 600px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+    
+        border-radius: 20px;
+    }
+    
+    .categoria-entregas .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 390px;
+    }
+    
+    .categoria-entregas h1 {
+        margin-left: 10px;
+    }
+    
+    .categoria-entregas li {
+        margin-left: 10px;
+    }
+    
+    .categoria-reembolsos {
+        height: 220px;
+        width: 600px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+        
+        border-radius: 20px;
+    }
+    
+    .categoria-reembolsos .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 160px;
+    }
+    
+    .categoria-reembolsos h1 {
+        margin-left: 15px;
+    }
+    
+    .categoria-reembolsos li {
+        margin-left: 10px;
+    }
+    
+    .categoria-problemas {
+        height: 220px;
+        width: 600px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+        
+        border-radius: 20px;
+    }
+    
+    .categoria-problemas .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 180px;
+    }
+    
+    .categoria-problemas h1 {
+        margin-left: 10px;
+    }
+    
+    .categoria-problemas li {
+        margin-left: 10px;
+    }
+    
+    .categoria-pagamento {
+        height: 220px;
+        width: 600px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+        
+        border-radius: 20px;
+    }
+    
+    .categoria-pagamento .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 210px;
+    }
+    
+    .categoria-pagamento h1 {
+        margin-left: 10px;
+    }
+    
+    .categoria-pagamento li {
+        margin-left: 10px;
+    }
+    
+    .categoria-suporte {
+        height: 220px;
+        width: 600px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+        
+        border-radius: 20px;
+    }
+    
+    .categoria-suporte .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 300px;
+    }
+    
+    .categoria-suporte h1 {
+        margin-left: 10px;
+    }
+    
+    .categoria-suporte li {
+        margin-left: 10px;
+    }
+ }
+
+ @media (max-width: 600px) {
+    
+    .carrinho svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #categorias li {
+        font-family: "Mergeone";
+        font-size: 14px;
+        color: whitesmoke;
+    
+        padding: 15px;
+    }
+    
+    #categorias h1 {
+        font-family: "Lexend";
+        font-size: 16px;
+    
+        margin-bottom: 15px;
+    }
+    
+    .categoria-entregas {
+        height: 220px;
+        width: 400px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+    
+        border-radius: 20px;
+    }
+    
+    .categoria-entregas .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 230px;
+    }
+    
+    .categoria-entregas h1 {
+        margin-left: 10px;
+    }
+    
+    .categoria-entregas li {
+        margin-left: 10px;
+    }
+    
+    .categoria-reembolsos {
+        height: 220px;
+        width: 400px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+    
+        border-radius: 20px;
+    }
+    
+    .categoria-reembolsos .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 40px;
+    }
+    
+    .categoria-reembolsos h1 {
+        margin-left: 15px;
+    }
+    
+    .categoria-reembolsos li {
+        margin-left: 10px;
+    }
+    
+    .categoria-problemas {
+        height: 220px;
+        width: 400px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+    
+        border-radius: 20px;
+    }
+    
+    .categoria-problemas .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 50px;
+    }
+    
+    .categoria-problemas h1 {
+        margin-left: 10px;
+    }
+    
+    .categoria-problemas li {
+        margin-left: 10px;
+    }
+    
+    .categoria-pagamento {
+        height: 220px;
+        width: 400px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+    
+        border-radius: 20px;
+    }
+    
+    .categoria-pagamento .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 70px;
+    }
+    
+    .categoria-pagamento h1 {
+        margin-left: 10px;
+    }
+    
+    .categoria-pagamento li {
+        margin-left: 10px;
+    }
+    
+    .categoria-suporte {
+        height: 220px;
+        width: 400px;
+    
+        background-color: #784E45;
+    
+        color: whitesmoke;
+    
+        padding: 15px;
+        margin-top: 10px;
+    
+        border-radius: 20px;
+    }
+    
+    .categoria-suporte .introdução {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    
+        margin-right: 140px;
+    }
+    
+    .categoria-suporte h1 {
+        margin-left: 10px;
+    }
+    
+    .categoria-suporte li {
+        margin-left: 10px;
+    }
+ }
+
+ @media (max-width: 500px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
