@@ -144,7 +144,7 @@ html {
 }
 
 .texto {
-    font-family: "marge one";
+    font-family: "Lexend Giga";
     font-size: 30px;
     margin-left: 580px;
     margin-top: 50px;
@@ -176,7 +176,7 @@ html {
 .linha {
     margin-left: 50px;
     width: 1400px;
-   height: 10px;
+    height: 10px;
     margin-top: 10px;
     color: #000;
 }
@@ -761,10 +761,10 @@ html {
 }
 
 .banner2 img {
-    height: 550px;
+    height: 500px;
     width: 1450px;
-    margin-top: 40px;
-    margin-left: 25px;
+    margin-top: 50px;
+    margin-left: 35px;
 
 
 }
@@ -773,20 +773,9 @@ html {
     display: flex;
     align-items: center;
     font-family: "Lexend Giga";
-    gap: 150px;
-
-}
-
-.contato>div {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-.foto {
-    max-width: 350px;
-    margin-left: 100px;
-    margin-top: 30px;
+    gap: 200px;
+    justify-content: center;
+    margin-top: 50px;
 
 }
 
@@ -797,237 +786,56 @@ html {
 
 }
 
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 .fooder-icons {
-    width: 100%;
-     
-     display: flex;
-     align-items: center;
-     flex-direction: row;
-     justify-content: space-around;
- 
-     padding: 20px;
- }
- 
- .fooder-icons svg {
-     width: 35px;
-     height: 35px;
- }
- 
- .fooder-icons .monã {
-     width: 140px;
-     margin-bottom: 10px;
- 
-     cursor: pointer;
- }
- 
- .sociais {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
- 
-     gap: 25px;
- }
- 
- .fooder-icons svg {
-     color: black;
- 
-     text-decoration: underline transparent;
-     text-decoration-thickness: 1px;
-     transition: text-decoration, color 600ms ease;
- 
-     cursor: pointer;
- }
- 
- .fooder-icons svg:hover {
-     text-decoration-color: #784E45;
-     color: #784E45;
- }
+    width: 27%;
 
-
-@media screen and (max-width: 900px) {
-    .banner1 {
-        height: 355px;
-        width: 958px;
-    }
-}
-
-@media screen and(max-width: 500px) {
-    .menu {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .banner1 img {
-        height: 200px;
-        width: 440px;
-    }
-
-    .sobre1 {
-        font-size: 16px;
-        padding-top: 20px;
-        font-family: "merge one";
-        width: 390px;
-    }
-
-    .sobre2 {
-        font-size: 16px;
-        padding-top: 20px;
-        font-family: "merge one";
-
-    }
-
-    .sobre3 {
-        font-size: 16px;
-        padding-top: 20px;
-        font-family: "merge one";
-        width: 390px;
-    }
-
-    .texto {
-        font-size: 20px;
-        margin-left: 100px;
-        margin-top: 15px;
-    }
-
-    .container {
-        display: flex;
-
-    }
-
-    .container img {
-        margin-top: -36px;
-        width: 105px;
-        height: 170px;
-    }
-
-    .container p {
-        font-family: "merge one";
-        font-size: 16px;
-    }
-
-
-    .parte {
-        background-color: #8AA1B1;
-        height: 2px;
-        width: 400px;
-    }
-
-    .bola {}
-
-    .banners img {
-        height: 110px;
-        width: 200px;
-    }
-
-    .banners1 img {
-        height: 110px;
-        width: 200px;
-    }
-
-    .banner2 img {
-        height: 200px;
-        width: 450px;
-    }
-
-    .foto {
-        height: 300px;
-        width: 350px;
-        margin-left: 10px;
-    }
-
-    .contato {
-        font-size: 10px;
-        margin-right: 10px;
-        gap: 28px;
-        flex-direction: column;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 535px;
+    padding: 20px;
 
 }
 
-@media (max-width: 800px) {
-    .menu {
-        width: 65vw;
-    }
+.fooder-icons svg {
+    width: 35px;
+    height: 35px;
+}
 
-    .menu a {
-        font-size: 16px;
-    }
+.fooder-icons .monã {
+    width: 140px;
+    margin-bottom: 10px;
 
-    .menu img {
-        width: 100px;
-    }
+    cursor: pointer;
+}
 
-    #icons {
-        width: 64vw;
-    }
+.sociais {
+    display: flex;
+    flex-direction: row;
 
-    .banner1 img {
-        height: 170px;
-        width: 450px;
-    }
+    align-items: center;
 
-    .sobre1 {
-        font-size: 16px;
-        padding-top: 20px;
-        font-family: "merge one";
-        width: 400px;
-    }
+    gap: 25px;
+}
 
-    .sobre2 {
-        font-size: 16px;
-        padding-top: 20px;
-        font-family: "merge one";
-        width: 400px;
-    }
+.fooder-icons svg {
+    color: black;
 
-    .sobre3 {
-        font-size: 16px;
-        padding-top: 20px;
-        font-family: "merge one";
-        width: 400px;
-    }
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
 
-    .texto {
-        font-size: 20px;
-        margin-left: 100px;
-        margin-top: 15px;
-    }
+    cursor: pointer;
+}
 
-    .container {
-        display: flex;
-    }
-
-    .container img {
-        margin-top: -36px;
-        width: 105px;
-        height: 170px;
-    }
-
-    .container p {
-        font-family: "merge one";
-        font-size: 16px;
-    }
-
-    .bolinhas {
-        margin-left: 0;
-    }
-
-    .banners img {
-        height: 110px;
-        width: 200px;
-    }
-
-    .banners1 img {
-        height: 110px;
-        width: 200px;
-    }
-
-    .banner2 img {
-        height: 200px;
-        width: 450px;
-    }
-
-
+.fooder-icons svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
 }
