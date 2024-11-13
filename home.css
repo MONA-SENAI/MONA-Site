@@ -771,12 +771,23 @@ html {
 
 .contato {
     display: flex;
-    align-items: center;
     font-family: "Lexend Giga";
     gap: 200px;
     justify-content: center;
     margin-top: 50px;
 
+}
+
+.pagamento {
+    margin-top: 110px;
+}
+
+.pagamento img {
+    margin-top: 10px;
+}
+
+.suporte {
+    margin-top: 120px;
 }
 
 .parte {
@@ -794,12 +805,12 @@ html {
 
 .fooder-icons {
     width: 27%;
-
+    margin-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 535px;
+    margin-left: 575px;
     padding: 20px;
 
 }
@@ -838,4 +849,10 @@ html {
 .fooder-icons svg:hover {
     text-decoration-color: #784E45;
     color: #784E45;
+}
+
+.instagram {
+    font-family: "Merge One";
+    margin-left: 354px;
+    margin-top: 10px;
 }
