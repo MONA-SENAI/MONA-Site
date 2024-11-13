@@ -175,9 +175,10 @@ html {
 
 .linha {
     margin-left: 50px;
-    width: 1390px;
-    height: 10px;
+    width: 1400px;
+   height: 10px;
     margin-top: 10px;
+    color: #000;
 }
 
 
@@ -789,7 +790,69 @@ html {
 
 }
 
-@media (max-width: 500px) {
+.parte {
+    height: 2px;
+    background-color: #8AA1B1;
+    margin: 0 0 5px 5px;
+
+}
+
+.fooder-icons {
+    width: 100%;
+     
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-around;
+ 
+     padding: 20px;
+ }
+ 
+ .fooder-icons svg {
+     width: 35px;
+     height: 35px;
+ }
+ 
+ .fooder-icons .monã {
+     width: 140px;
+     margin-bottom: 10px;
+ 
+     cursor: pointer;
+ }
+ 
+ .sociais {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ 
+     gap: 25px;
+ }
+ 
+ .fooder-icons svg {
+     color: black;
+ 
+     text-decoration: underline transparent;
+     text-decoration-thickness: 1px;
+     transition: text-decoration, color 600ms ease;
+ 
+     cursor: pointer;
+ }
+ 
+ .fooder-icons svg:hover {
+     text-decoration-color: #784E45;
+     color: #784E45;
+ }
+
+
+@media screen and (max-width: 900px) {
+    .banner1 {
+        height: 355px;
+        width: 958px;
+    }
+}
+
+@media screen and(max-width: 500px) {
     .menu {
         display: flex;
         align-items: center;
@@ -844,10 +907,127 @@ html {
         font-size: 16px;
     }
 
+
     .parte {
         background-color: #8AA1B1;
         height: 2px;
-        width: 460px;
+        width: 400px;
     }
+
+    .bola {}
+
+    .banners img {
+        height: 110px;
+        width: 200px;
+    }
+
+    .banners1 img {
+        height: 110px;
+        width: 200px;
+    }
+
+    .banner2 img {
+        height: 200px;
+        width: 450px;
+    }
+
+    .foto {
+        height: 300px;
+        width: 350px;
+        margin-left: 10px;
+    }
+
+    .contato {
+        font-size: 10px;
+        margin-right: 10px;
+        gap: 28px;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .menu {
+        width: 65vw;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .menu img {
+        width: 100px;
+    }
+
+    #icons {
+        width: 64vw;
+    }
+
+    .banner1 img {
+        height: 170px;
+        width: 450px;
+    }
+
+    .sobre1 {
+        font-size: 16px;
+        padding-top: 20px;
+        font-family: "merge one";
+        width: 400px;
+    }
+
+    .sobre2 {
+        font-size: 16px;
+        padding-top: 20px;
+        font-family: "merge one";
+        width: 400px;
+    }
+
+    .sobre3 {
+        font-size: 16px;
+        padding-top: 20px;
+        font-family: "merge one";
+        width: 400px;
+    }
+
+    .texto {
+        font-size: 20px;
+        margin-left: 100px;
+        margin-top: 15px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .container img {
+        margin-top: -36px;
+        width: 105px;
+        height: 170px;
+    }
+
+    .container p {
+        font-family: "merge one";
+        font-size: 16px;
+    }
+
+    .bolinhas {
+        margin-left: 0;
+    }
+
+    .banners img {
+        height: 110px;
+        width: 200px;
+    }
+
+    .banners1 img {
+        height: 110px;
+        width: 200px;
+    }
+
+    .banner2 img {
+        height: 200px;
+        width: 450px;
+    }
+
 
 }
