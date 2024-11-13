@@ -102,7 +102,7 @@ body {
     align-items: center;
     position: relative;
     padding: 20px 0;
-    background-image: url('C:/Users/40266067832/Desktop/MONA-Site/produtos/imgs/Lookbook.png');
+    background-image: image-set(url('imgs/lookbook.png'));
     background-size: cover;
     background-position: center;
     width: 100%; /* Responsivo - largura total da tela */
@@ -199,7 +199,7 @@ body {
 }
 
 .carrossel:hover {
-    transform: scale();
+    transform: scale()
 }
 
 .carrossel .item {
@@ -213,12 +213,16 @@ body {
     text-align: center; 
 }
 
+.carrossel .item:hover {
+    transform: scale(1.0);
+}
+
 .carrossel .item img {
     width: 100%; /* Largura da imagem ocupa 100% do item */
     height: 500px; /* Altura fixa para tornar a imagem quadrada */
     object-fit: cover; /* Corta a imagem se necessário para preencher o espaço */
     border-radius: 5px; 
-    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-bottom: 10px; 
 }
 
 .carrossel .item p {
