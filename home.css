@@ -772,7 +772,7 @@ html {
 .contato {
     display: flex;
     font-family: "Lexend Giga";
-    gap: 200px;
+    gap: 305px;
     justify-content: center;
     margin-top: 50px;
 
@@ -804,51 +804,51 @@ html {
 }
 
 .fooder-icons {
-    width: 100%;
-     
-     display: flex;
-     align-items: center;
-     flex-direction: row;
-     justify-content: space-around;
- 
-     padding: 20px;
- }
- 
- .fooder-icons svg {
-     width: 35px;
-     height: 35px;
- }
- 
- .fooder-icons .monã {
-     width: 140px;
-     margin-bottom: 10px;
- 
-     cursor: pointer;
- }
- 
- .sociais {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     align-items: center;
- 
-     gap: 25px;
- }
- 
- .fooder-icons svg {
-     color: black;
- 
-     text-decoration: underline transparent;
-     text-decoration-thickness: 1px;
-     transition: text-decoration, color 600ms ease;
- 
-     cursor: pointer;
- }
- 
- .fooder-icons svg:hover {
-     text-decoration-color: #784E45;
-     color: #784E45;
- }
+    width: 31%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 105px;
+    padding: 20px;
+    margin-left: 525px;
+}
+
+.fooder-icons svg {
+    width: 35px;
+    height: 35px;
+}
+
+.fooder-icons .monã {
+    width: 140px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+
+.sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.fooder-icons svg {
+    color: black;
+
+    text-decoration: underline transparent;
+    text-decoration-thickness: 1px;
+    transition: text-decoration, color 600ms ease;
+
+    cursor: pointer;
+}
+
+.fooder-icons svg:hover {
+    text-decoration-color: #784E45;
+    color: #784E45;
+}
 
 
 @media screen and (max-width: 900px) {
