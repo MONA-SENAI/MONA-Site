@@ -75,9 +75,12 @@ body {
 }
 
 .carrinho {
-    width: 35px;
-    height: 35px;
-    padding-bottom: 10px;
+    width: 40px;
+    height: 40px;
+
+    margin-right: 5px;
+    margin-bottom: 20px;
+    
 }
 
 #icons {
